@@ -70,6 +70,37 @@ def reset_quiz_state(full_reset=False):
         st.session_state.mode = "Exam Quiz"
         st.session_state.show_solution_preference = "Instantly"
 
+def display_instant_feedback(exam, current_q_index):
+    """
+    Displays feedback for the previously answered question if the preference is "Instantly".
+    This is called at the top of the question display function.
+    """
+    if st.session_state.show_solution_preference != "Instantly":
+        return  # Do nothing if preference is not set to "Instantly"
+
+    # We want to show feedback for the *previous* question index
+    prev_q_index = current_q_index - 1
+
+    # Check if there was a previous question and if it has been answered
+    if prev_q_index >= 0 and prev_q_index in st.session_state.user_answers:
+        questions = exam.get("questions", [])
+        prev_question = questions[prev_q_index]
+        user_ans_key = st.session_state.user_answers[prev_q_index]
+        is_correct = user_ans_key == prev_question.get("answer", "").lower()
+        
+        # Display the feedback in a container
+        with st.container():
+            st.markdown("---")
+            st.write(f"**Result for Question {prev_q_index + 1}:**")
+            if is_correct:
+                st.success("Your answer was correct!")
+            else:
+                st.error(f"Your answer was incorrect. The correct answer was: **{prev_question.get('answer', 'N/A').upper()}**")
+            with st.expander("View Explanation"):
+                st.info(prev_question.get("solution", "No solution provided."))
+            st.markdown("---")
+
+
 def display_exam_question(exam):
     """
     Displays the current question for the selected exam, handles user input,
@@ -77,6 +108,9 @@ def display_exam_question(exam):
     """
     questions = exam.get("questions", [])
     q_index = st.session_state.question_index
+
+    # Bug fix: Display feedback for the previous question at the top of the page.
+    display_instant_feedback(exam, q_index)
 
     if q_index < len(questions):
         question = questions[q_index]
@@ -92,6 +126,7 @@ def display_exam_question(exam):
                 submitted = st.form_submit_button("Submit and Next")
 
                 if submitted:
+                    # Process and store the answer
                     selected_key = user_answer.split(')')[0].lower()
                     st.session_state.user_answers[q_index] = selected_key
                     
@@ -99,14 +134,9 @@ def display_exam_question(exam):
                     if is_correct:
                         st.session_state.score += 1
 
-                    if st.session_state.show_solution_preference == "Instantly":
-                        if is_correct:
-                            st.success("Correct!")
-                        else:
-                            st.error(f"Incorrect. The correct answer is {question.get('answer', 'N/A').upper()}.")
-                        with st.expander("See explanation"):
-                            st.info(question.get("solution", "No solution provided."))
+                    # Bug fix: Removed the feedback display from here.
                     
+                    # Increment index and rerun to show the next question (and feedback for this one)
                     st.session_state.question_index += 1
                     st.rerun()
     else:
@@ -120,6 +150,7 @@ def show_final_score_and_review(exam):
     questions = exam.get("questions", [])
     st.header(f"Quiz Finished! Your Score: {st.session_state.score}/{len(questions)}")
 
+    # This logic correctly shows the full review only if the user chose "At the end"
     if st.session_state.show_solution_preference == "At the end":
         st.subheader("Review Your Answers")
         for i, q in enumerate(questions):
@@ -253,4 +284,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
