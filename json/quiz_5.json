@@ -1,0 +1,397 @@
+{
+  "exams": [
+    {
+      "date": "June 21st 2021",
+      "questions": [
+        {
+          "question": "Suppose the assumptions of the Modigliani-Miller paradigm are satisfied. Consider firm RH, which is partly financed with debt D and partly financed with equity E (i.e. RH is levered). Modigliani-Miller Proposition 2 shows that the cost of equity capital of a levered firm is D/E * (rU - rD) where rD is the firm cost of debt. What is rU? How much is RH's weighted average cost of capital?",
+          "options": {
+            "a": "rU is RH's cost of capital if RH was financed only with debt. RH's weighted average cost of capital is rE",
+            "b": "rU is RH's cost of capital, if it was financed only with equity. RH's weighted average cost of capital is rD",
+            "c": "rU is the cost of capital of an unlevered firm otherwise identical to RH. RH's weighted average cost of capital equals rU",
+            "d": "rU is the cost of capital of an unlevered firm otherwise identical to RH. RH's weighted average cost of capital equals rE"
+          },
+          "answer": "c",
+          "solution": "According to MM Proposition 2, the weighted average cost of capital of a levered firm equals the cost of capital of an otherwise identical firm, but unlevered. This is denoted with rʊ in the MM Proposition 2 main formula (in the text of the question). Therefore, it is true that rʊ would be the cost of capital RH, if RH was financed only with equity (answer b). But b is wrong because in that case the firm weighted average cost of capital would be rɛ = rʊ and not rƉ. The second part of d is also wrong (while the first part is correct) because the levered firm weighted average cost of capital is rʊ, not rɛ (as explained above)."
+        },
+        {
+          "question": "Which of the following is usually considered as an \"agency benefit\" related to debt financing of firms?",
+          "options": {
+            "a": "Leverage allows for a better design of top managers' compensation packages",
+            "b": "Leverage allows for a more dispersed ownership structure",
+            "c": "Leverage induces more “debt overhang\"",
+            "d": "Leverage induces a commitment for managers to avoid bankruptcy"
+          },
+          "answer": "d",
+          "solution": "Debt in the capital structure increases the risk of bankruptcy, an outcome very costly for top managers. Therefore, debt indirectly induces them to manage the firm more efficiently in order to avoid such an outcome. C. is true, but more debt overhang is inefficient (so it would be an agency cost, not a benefit).a is false because the design of the compensation package aims to align the interests of managers with the interests of shareholders, irrespectively of the presence of debt."
+        },
+        {
+          "question": "Consider a firm with risky debt in the Modigliani-Miller world. If the debtholders correctly anticipate the probability of default of the firm and pay its debt accordingly, then:",
+          "options": {
+            "a": "The firm cost of debt depends on the riskiness of debt, while its weighted average cost of capital is independent of the capital structure of the firm",
+            "b": "The firm cost of debt depends on the riskiness of debt, while its cost of equity is independent of the capital structure of the firm",
+            "c": "The firm cost of debt is independent of the riskiness of debt, while its weighted average cost of capital depends on the capital structure of the firm",
+            "d": "Both the firm cost of equity and its weighted average cost of capital increase with the riskiness of debt"
+          },
+          "answer": "a",
+          "solution": "See \"Cost of capital with risky debt in the MM world” in lecture 1. Answer b is wrong because the cost of equity increases when bankruptcy becomes more likely, that is when leverage increases. C is wrong because cost of debt increases with its riskiness, and also the second part is wrong, since MM Proposition 1 holds. Given that MM Proposition 1 holds, the weighted average cost of capital is independent of the capital structure of the firm, i.e. it is independent of the riskiness of debt, and answer d. is also wrong."
+        },
+        {
+          "question": "In a fixed-price IPO, the company going public and the underwriter agree on a fixed offer price at which the company shares are offered to investors. Which of the following statements is true?",
+          "options": {
+            "a": "The company bears most of the price risk",
+            "b": "The demand for the shares is known to both the company and the underwriter before the IPO takes place",
+            "c": "The underwriter bears most of the price risk",
+            "d": "The demand for the shares is known to the company before the IPO takes place"
+          },
+          "answer": "c",
+          "solution": "The demand for the shares issued at the IPO is only known once the offer is closed, and not before. This is why there is a price risk, i.e. the risk that the IPO price, which clears demand and supply, is low."
+        },
+        {
+          "question": "In an IPO auction organized as a multi-unit, uniform price auction, an investor who wants to buy more than one share at the IPO may have an incentive to:",
+          "options": {
+            "a": "Demand more shares than the amount actually desired at any given price",
+            "b": "Demand only one share, at any given price, because of the risk of suffering \"winner curse\"",
+            "c": "Offer a price lower than the one the investor is actually willing to pay in reality on the additional units demanded"
+          },
+          "answer": "c",
+          "solution": "If the investor thinks that his/her demand is going to fix the price of the uniform price auction, then he/she has an interest to reduce the price at which he/she offers to buy any additional share. This is the case because if demand equalizes supply thanks to his/her order, then by reducing the offered price the investor reduces the IPO price. Therefore, the investor makes a profit on all shares acquired."
+        },
+        {
+          "question": "Which of the following statement is wrong?",
+          "options": {
+            "a": "One of the benefits of bookbuilding in IPOs is that it allows the underwriter to discretionary allocate block of shares to some investors",
+            "b": "One of the benefits of bookbuilding in IPOs is that it usually shows a lower underpricing than other IPO-methods",
+            "c": "One of the benefits of bookbuilding in IPOs is that it induces the underwriter to perform better research of potential investors",
+            "d": "One of the benefits of bookbuilding in IPOs is that it allows underwriters to reward some investors for providing reliable information about the share value"
+          },
+          "answer": "b",
+          "solution": "Empirically, book-building is associated rather to higher underpricing. a-c-d actually are advantages of book-building, so they are correct."
+        },
+        {
+          "question": "Consider an IPO in which the underwriter obtains a “Greenshoe provision” that allows to borrow from the issuer 2 million shares and sell them to the public at the IPO price, which is 10 EUR. The underwriter receives a discount equal to 0.50 EUR per share. At the end of the first trading day, the stock price is 13.25 EUR. After one month of trading the underwriter needs to cover its position, short of 2 million shares due to the Greenshoe provision. At the end of this first trading month, the price of the stock is exactly 10 EUR. The underwriter then has two options. First, to buy the shares from the issuer at the discounted price. Second, to buy the shares on the market at the market price. What are the underwriter's profits in the two options? Why should the underwriter go for the second option?",
+          "options": {
+            "a": "First option profit = 1 mln EUR; Second option profit = 0; the underwriter may still go for the second option in order to support the market price of the share",
+            "b": "First option profit = 1 mln EUR; Second option profit = 0; the underwriter may still go for the second option in order to reduce the IPO underpricing",
+            "c": "First option profit = 2 mln EUR; Second option profit = 0; the underwriter may still go for the second option in order to support the market price of the share",
+            "d": "First option profit = 1 mln EUR; Second option profit = 0.5 mln EUR; the underwriter may still go for the second option in order to reduce the IPO underpricing"
+          },
+          "answer": "a",
+          "solution": "Profit of the first option = (10-9.50) EUR x 2 mln shares = 1 mln EUR, because the UW has a discount of 0.50 EUR per share, over the 2 million shares over-allotted through the Greenshoe provision. Therefore, the UW sells the 2 million shares at the IPO price and can buy them from the issuer at 9.50 EUR Profit of the second option = (10-10) EUR x 2 mln shares = 0, because if the UW buys the shares on the market, it pays them 10 EUR (= the market price) Even if the profit of the first choice is higher than the profit of the second choice, remember that the UW has the obligation to support the market price of the new public company shares for a certain amount of time, in order to avoid that the new investors feel expropriated."
+        },
+        {
+          "question": "According to a widely accepted thumb rule linking the change in interest rates and bond prices:",
+          "options": {
+            "a": "For every 1% decrease in interest rates, a fixed-rate bond price will decrease by approximately 1%, for every year of the duration",
+            "b": "For every 1% increase in interest rates, a fixed-rate bond price will increase by approximately 1%, for every year of the duration",
+            "c": "For every 1% decrease in interest rates, a floating-rate bond price will increase by approximately 1%",
+            "d": "For every 1% increase in interest rates, a fixed-rate bond price will decrease by approximately 1%, for every year of the duration"
+          },
+          "answer": "d",
+          "solution": "Notice that we do not have any workable thumb rule for the change in floating-rate bond price due to a change in interest rates."
+        },
+        {
+          "question": "A warrant is a call option written by the company itself on new stock, usually attached to convertible debt. Convertible debt that embeds a warrant usually:",
+          "options": {
+            "a": "Pays a higher interest rate than an otherwise identical, but not convertible debt",
+            "b": "Pays a lower interest rate than an otherwise identical, but not convertible debt",
+            "c": "None of the above"
+          },
+          "answer": "b",
+          "solution": "Given that it embeds an option, which in turn cannot have a negative value, convertible debt usually pays a lower interest than otherwise identical, but not convertible debt. Otherwise, every investor would prefer the debt that embeds the warrant."
+        },
+        {
+          "question": "While you are trading stock options, you notice an arbitrage opportunity. The current stock price of AZ Inc. share is 8 EUR, and the one-year risk-free interest rate is 1%. A one-year put on AZ share with a strike price of 6.50 EUR trades at 0.75 EUR, while a one-year call with the same strike price trades at 2 EUR. How do you exploit this arbitrage opportunity?",
+          "options": {
+            "a": "You buy the put option and sell the call",
+            "b": "You buy the put option, sell the call option, buy the share and borrow the present value of the strike price at a 1% interest rate",
+            "c": "You buy the call option, sell the put option, sell the share and invest the present value of the strike price in a safe account at a 1% interest rate",
+            "d": "You buy the call option and sell the put"
+          },
+          "answer": "c",
+          "solution": "Use the Put-Call parity: C = P + S – PV(K) with P = 0.75, S = 8, K = 6.50 and r=1%, so that PV(K) = 6.50/1.01 = 6.435 EUR. Then you find that the no-arbitrage price of the call is C = 2.315, according to the Put-Call parity. The call now trades at 2 EUR, and therefore is underpriced. You buy the call and sell the put and the share. Your total inflow today is -2+0.75+8 = 6.75 EUR. You invest 6.50/1.01 = 6.435 EUR in a safe account paying 1% annual interest rate, so that in a year you have 6.50 EUR in such an account. And your total inflow today is 6.75 – 6.435 EUR = 0.315 EUR. It is not required in the exercise, but you can verify that if you chose the trading strategy c. you end up with a zero profit in a year, irrespectively of the stock price that will realize then. Therefore, you make an arbitrage profit of 0.315 EUR today. If the stock price in a year, S1 is higher than 6.50, then: You exercise the call, paying 6.50 and obtaining one share With this share you cover your short position of a share Put is not exercised You have +6.50 Eur in the account, so in total you end up with zero cash at t=1. If the stock price in a year, S1 is lower than 6.50, then: You do not exercise the call The put is exercised: you buy at 6.50 one share With this share you cover your short position of a share You use the 6.50 in your account for the purchase related with the put. Again you end up with zero cash at t=1."
+        },
+        {
+          "question": "What is a “protective put option\"?",
+          "options": {
+            "a": "A long position in a put held on a stock you already own",
+            "b": "A long position in a put held on a stock you do not own already",
+            "c": "A long position in a call held on a stock you already own",
+            "d": "None of the above"
+          },
+          "answer": "a",
+          "solution": "It is called protective since if the stock price reduces, you lose from the stock you own but you gain from the put."
+        },
+        {
+          "question": "When you evaluate a real option with the “Replicating Portfolio\" method, you look for:",
+          "options": {
+            "a": "A portfolio of risky bonds and of shares of the project underlying the real option such that the portfolio pays the same payoffs of the real option in all states at the expiration date of the (real) option",
+            "b": "A portfolio of risky bonds and of shares of the project underlying the real option such that the portfolio pays the same payoffs of the real option in the realized state at the expiration date of the (real) option",
+            "c": "A portfolio of risk-free bonds and of shares of the project underlying the real option such that the portfolio pays the same payoffs of the real option in all states at the expiration date of the (real) option",
+            "d": "None of the above"
+          },
+          "answer": "c",
+          "solution": "SOLUTION: c"
+        },
+        {
+          "question": "According to some theories which try to explain mergers' waves, these waves are caused by the presence of high liquidity in the stock markets. If these theories are correct, then we should observe that:",
+          "options": {
+            "a": "Private firms should be the most active in the M&As market during the waves",
+            "b": "Vertical mergers are more likely to occur than horizontal mergers during the waves",
+            "c": "Pre-emptive mergers are more likely to occur during waves than outside waves",
+            "d": "Publicly listed firms should be the most active in the M&A market during the waves"
+          },
+          "answer": "d",
+          "solution": "Public firms (= firms listed on the stock markets) are the ones attracting markets liquidity, and therefore receive large amounts of funding, that they can invest in M&As (more than private firms, for example)."
+        },
+        {
+          "question": "The market for corporate control is considered as an external corporate governance mechanism. How is it supposed to work, in order to discipline the current management of companies?",
+          "options": {
+            "a": "Acquiring firms take over target firms and by doing this they become \"too large to be taken over\"",
+            "b": "Firms run more efficiently take over badly managed firms, replace its management and improve operations",
+            "c": "Firms run more efficiently become target of acquisitions due to their positive expected future performance",
+            "d": "Firms run more efficiently merge with other efficient firms to create an even bigger, efficient conglomerate that can exploit economies of scale"
+          },
+          "answer": "b",
+          "solution": "SOLUTION: b"
+        },
+        {
+          "question": "There are two riskless, zero-coupon bonds currently traded on the financial markets. One is a bond issued by a non-environmentally friendly company, Black Co., and the other one is a green bond issued by an environmental friendly company, Green Co. The face value of the two bonds equals 100 EUR, and both bonds have maturity of 2 years. The yearly risk-free interest rate is equal to r = 2%. There are two kinds of investors on the bond market. One type is purely financial investors, who only look at the financial performance of their investment when choosing in which bond to invest in. The second type is environmental-engaged (“green”) investors, who are willing to earn a 0.5% lower return to invest in an environmentally friendly security. What is the difference between the prices of the two bonds, assuming that: (1) financial investors are willing to buy both bonds, (2) green investors do not buy Black bonds, (3) there are enough financial investors to buy all the Black, and (4) there are enough “green” investors to buy all the Green bonds?",
+          "options": {
+            "a": "The Green bond costs 0.95 EUR more than the Black bond",
+            "b": "The Green bond costs 0.95 EUR less than the Black bond",
+            "c": "The Green bond costs 0.52 EUR more than the Black bond",
+            "d": "The Green bond costs 0.52 EUR less than the Black bond"
+          },
+          "answer": "a",
+          "solution": "Compute the price of the two bonds, as the PV of the future cash-flow paid by each bond (in both cases, only the Face Value = 100 EUR, since these are zero-coupon bonds): P (Black) = 100 / (1.02^2) = 96.12 P (Green) = 100 / (1.015^2) = 97.07 because the Green investors are willing to buy the green bond even if this pays a yield of 1.5% (= 0.5% less than the risk-free rate). The Green bond therefore costs 0.95EUR more than the Black bond."
+        },
+        {
+          "question": "An entrepreneur can develop a new project that costs I. The project earns an uncertain payoff in one year, equal to 100 mln EUR in case of success, and equal to 0 in case of failure. The probability of success equals 2/3. The entrepreneur is able to obtain 10 mln EUR from this project in case of success, while (s)he knows that (s)he will get zero in case of failure. The entrepreneur has no funds to invest in the project, and asks some external, risk-neutral investors to finance this project. Suppose the risk-free interest rate on the financial markets is 10%. What is the maximum amount risk-neutral investors are willing to invest in this project?",
+          "options": {
+            "a": "60 mln EUR",
+            "b": "81.82 mln EUR",
+            "c": "45.45 mln EUR",
+            "d": "54.54 mln EUR"
+          },
+          "answer": "d",
+          "solution": "The income that the entrepreneur can offer to risk-neutral, outside investors, if they accept to invest in this project is, at most, equal to (2/3)*(100-10) = 60 mln EUR. Risk-neutral investors want to earn (at least) the risk-free rate on this investment, and therefore are willing to invest 60 mln EUR/1.10 = 54.54 mln EUR (at most)."
+        },
+        {
+          "question": "\"Relative Performance Evaluation\" (RPE) is a practice according to which:",
+          "options": {
+            "a": "Top-management pay is related not to the absolute performance of its firm, but to its firm performance relative to other, competing firms' performance",
+            "b": "Top-management pay is related to the performance of its firm across different years, with a bonus paid only if the firm performance improves across time",
+            "c": "Top-management pay is related to the improvement of its firm stock price, relative to the previous years",
+            "d": "Top-management pay is related to the absolute performance of its firm, measured in terms of accounting earnings or in terms of stock price returns."
+          },
+          "answer": "a",
+          "solution": "The important element is that top-management receives a bonus if its firm overperforms, on average, the competitors."
+        },
+        {
+          "question": "One of the ways to solve the \"free-rider” problem in tender offers on companies owned by a multitude of very small (atomistic) shareholders is to dilute them if the takeover is successful. This can be obtained by charging some debt on the balance sheet of the target company, after taking its control. Suppose that all investors know that, if the takeover is successful, after reorganization each share of the target company will be valued at 17.5 EUR, while its current (pre-takeover) value is 10 EUR. Suppose also that after the takeover, the company debt amounts to 2 EUR on every share. Denote with p the price offered in the tender offer. The tender offer can be successful and at the same time might be profitable for the acquiring company who is launching it if and only if:",
+          "options": {
+            "a": "p is higher than 15.5 EUR",
+            "b": "p is higher than 10 EUR",
+            "c": "p is higher than 15.5 EUR and lower than 17.5 EUR",
+            "d": "p is higher than 8.5 EUR and lower than 17.5 EUR."
+          },
+          "answer": "c",
+          "solution": "p needs to be higher than (17.5 – 2) EUR = 15.5 EUR in order to be profitable for a target shareholder to tender its share. At the same time, p needs to be lower than 17.5 EUR otherwise the takeover is not profitable for the acquirer."
+        },
+        {
+          "question": "Many empirical studies, and large anecdotical evidence, find that takeover premia are similar in takeovers where the target firm is sold through an auction and in takeovers negotiated one-to-one between acquirer and target. One of the reasons of this finding is that:",
+          "options": {
+            "a": "Only the acquirers that evaluate the target firm the most participate in the auction to buy the target",
+            "b": "In one-to-one negotiation, the target firm has always the option to organize an auction between potential acquirers, which represents its “outside option\"",
+            "c": "The target firm usually resists takeovers, no matter how they are organized",
+            "d": "None of the above"
+          },
+          "answer": "b",
+          "solution": "a. is wrong because it does not explain why the premium is similar in the two cases; c. is wrong because the empirical evidence is valid irrespective whether the target firm resisted or not to the takeover offer. B is correct because we know that in one-to-one negotiations the outside option matters, and in the end determines the outcome of the bargaining process, i.e. the takeover premium."
+        }
+      ]
+    },
+    {
+      "date": "September 10th 2021",
+      "questions": [
+        {
+          "question": "What is a credit default swap (CDS)?",
+          "options": {
+            "a": "A financial contract representing a put option on a firm' assets. A CDS is used to insure the seller of the CDS against the risk that the firm defaults.",
+            "b": "A financial contract representing a put option on a firm' assets. A CDS is used to insure the buyer of the CDS against the risk that the firm defaults.",
+            "c": "A financial contract representing a call option on a firm' assets. A CDS is used to insure the seller of the CDS against the risk that the firm defaults.",
+            "d": "A financial contract representing a call option on a firm' assets. A CDS is used to insure the buyer of the CDS against the risk that the firm defaults."
+          },
+          "answer": "b",
+          "solution": "SOLUTION: b (see slides)"
+        },
+        {
+          "question": "According to some scholars, the presence of debt in the capital structure of a firm causes agency costs. According to this view, one of the reasons why high R&D-intensity firms are typically financed with little amount of debt is that:",
+          "options": {
+            "a": "Their future EBIT are very risky",
+            "b": "Financing them with equity is very risky",
+            "c": "Financing these firms with debt is very risky, but investors are able to anticipate the riskiness of debt perfectly",
+            "d": "Financing these firms with debt provide the firms' shareholders incentives to undertake more risky projects than in the case the firm was entirely financed with equity"
+          },
+          "answer": "d",
+          "solution": "SOLUTION: d. Notice that a is wrong because it implies that overall investment in these firms is very risky, so it might be a good idea to finance these firms with debt rather than equity, whose value is more sensitive to the realization of future earnings than the value of debt. Both a and b would imply that also debt financing is risky and that the firm uses internal capital to finance projects. If investors were able to anticipate the riskiness of debt perfectly, there would not be an agency cost, so c is also wrong."
+        },
+        {
+          "question": "Consider a loan of 200,000 EUR with no amortization (that is, an interest only, or plain vanilla loan). The loan is a floating rate one and the loan interest rate equals the current LIBOR rate + 200 basis points. The loan rate is adjusted every year. Suppose the current LIBOR is 0.5%, while next year the LIBOR is expected to be equal to 1.5%. What is the annual payment of the loan this year? And what do you expect to pay next year, according to the LIBOR forecasts?",
+          "options": {
+            "a": "Current year payment = 7,000 EUR; expected next year payment = 6,000 EUR",
+            "b": "Current year payment = 5,000 EUR; expected next year payment = 7,000 EUR",
+            "c": "Current year payment = 5,000 EUR; expected next year payment = 6,000 EUR",
+            "d": "Current year payment = 6,000 EUR; expected next year payment = 7,000 EUR"
+          },
+          "answer": "b",
+          "solution": "SOLUTION: Current year rate = 0.5% + 2.0% = 2.5% -> payment = 5,000 EUR Next year (expected) rate = 1.5% + 2.0% = 3.5% -> payment = 7,000 EUR"
+        },
+        {
+          "question": "Your venture firm is planning to launch a new product. The investment required equals 100 (all numbers are in thousands EUR). You can invest 10 in this project of your own money, while you plan to raise the missing 90 from some risk-neutral, outside investors, in the form of new equity. There are two versions of this new product. One, version “L”, is very similar to a product that you designed previously. Another one, version “H”, is extremely innovative and hard to be designed. Both versions cost 100, and provide an uncertain return in one year: if the product is successful, both versions earn 180; if the product is not successful, they both earn 0. The probability of success of \"H\" is 2/3 while the probability of success of \"L\" is 1/2. You prefer to develop version “L”, since this requires less effort. Therefore, if you develop version “L”, you enjoy private benefits B (in monetary terms, again in thousands EUR), while you obtain zero private benefits if you develop version “H”. What is the maximum level of private benefits B (in thousands EUR) such that the Incentive Compatibility constraint which ensures you will develop version “H” is satisfied?",
+          "options": {
+            "a": "5 thousands EUR",
+            "b": "3 thousands EUR",
+            "c": "9 thousands EUR",
+            "d": "12 thousands EUR"
+          },
+          "answer": "b",
+          "solution": "SOLUTION: By investing 10k EUR over the total of 100k EUR, you own 1/10 of the expected CF of the project, whatever version you implement. The expected CF from version H is 2/3 *180k = 120k, while the expected CF from version L is ½ * 180k = 90k. Therefore, you expect to earn 1/10 * 120k = 12k if you develop H, while you expect 1/10 * 90k = 9k if you develop L. But in the latter case you also earn private benefits B. The IC guarantees that you chose H instead of L if 12k greater or equal than 9k+B, that is the B lower or equal than 3 (thousands EUR)."
+        },
+        {
+          "question": "You buy today 100 European call options on Dropbox stock. The options expire in exactly 30 days, and their strike price is 32 USD. Each option today costs 1.20 USD. Assume you chose to finance the purchase of the 100 options by borrowing the entire amount at 5% interest per year. What is the price of the Dropbox stock at the expiration date such that you make exactly zero profit on your options purchase? (Consider that the year is composed of 360 days).",
+          "options": {
+            "a": "33.205",
+            "b": "32.525",
+            "c": "34.505",
+            "d": "35.025"
+          },
+          "answer": "a",
+          "solution": "SOLUTION: a. Solving in S the equation: 100 * max(S – 32 ; 0) – (1.20 * 100)(1.05)^(30/360) = 0 gives S = 33.205."
+        },
+        {
+          "question": "Your company is thinking of undertaking a new project. The NPV of this project, computed as today (time t = 0), is negative. You expect that a major economic event will occur in one year (at t = 1). This event will have important consequences on the market for the goods that you produce if you invest in this new project. If the economic event causes an improvement of market conditions, the NPV of this new project evaluated at t = 1 will be equal to 520000 EUR. If the event causes a deterioration of market conditions, the NPV of this new project at t = 1 will be negative, and precisely equal to – 295000 EUR. Suppose that you have the option to postpone the investment by one year. Suppose also that you are risk-neutral, and that under the risk-neutral probability, the probability that the market deteriorates next year equals 67.5%. The one-year risk-free interest rate is 3%. Under these assumptions, what is the present value of the investment in the new project today, at t = 0 (approximated)?",
+          "options": {
+            "a": "214000 EUR",
+            "b": "208521 EUR",
+            "c": "164078 EUR",
+            "d": "124362 EUR"
+          },
+          "answer": "c",
+          "solution": "SOLUTION: c. With the option to postpone, you can decide next year whether to undertake the project or not. Given that in the negative economic conditions you will not invest, you are able to cut the losses if that contingency occurs. Overall, with flexibility, you already know today that you will invest if and only if good economic conditions will arise. The PV at t=0 of the project with the option to postpone then equals PV = (1-0.675)*520000 / 1.03 = 164077.7 approximated to 164078 EUR."
+        },
+        {
+          "question": "An entrepreneur can develop a project that costs I = 18 mln EUR in two versions, “H” and \"L\", which cannot be distinguished by the outside investors, nor from a court in case of litigation. Both versions provide the same payoffs: R = 40 (mln EUR) in case of success, and O in case of failure. The probability of success of version “H” equals pH = 0.675 while the probability of success of version “L” equals pL = 0.25. The entrepreneur earns private benefits B = 1 mln EUR in case (s)he develops version \"L\" and zero otherwise, irrespectively of the success or failure of the project. The entrepreneur obtains payment w > 0 if and only if the project which is developed is successful, while the entrepreneur earns zero if the project is not successful. Suppose the payment w is the minimum amount such that the entrepreneur can credibly commit to choosing the version “H” of the project in front of outside investors. What is the maximum expected payoff that the entrepreneur can offer to outside investors who finance the project (in other terms: what is the maximum pledgeable income)?",
+          "options": {
+            "a": "17.51 mln EUR",
+            "b": "19.52 mln EUR",
+            "c": "20.04 mln EUR",
+            "d": "25.41 mln EUR"
+          },
+          "answer": "d",
+          "solution": "SOLUTION: d. If the (IC)-constraint is: 0.675*w >= 0.25*w + 1, is satisfied, then it is in the interest of the entrepreneur to develop version H. This occurs if w is greater or equal than than 1/0.425 = 2.35 mln EUR. Fixing the minimum w that satisfies the IC-constraint (that is, the minimum w that allows the entrepreneur to credibly commit to undertake the H-version of the project), the pledgeable income equals p_H * (R-w) = 0.675*(40-2.35) = 25.41 mln EUR."
+        },
+        {
+          "question": "Company A owns a toehold a = 20% in company T. The management of company A decides to launch a tender offer for 100% of T' shares. The offer is conditional on A getting 100% of T' shares. The current price of one stock of T, before the offer is announced, equals 17.12 EUR. Assume that every investor knows that, if the offer is successful, the value of one stock of T will be 19 EUR. What is the maximum price at which a tender offer is profitable for A?",
+          "options": {
+            "a": "17.12 EUR",
+            "b": "19 EUR",
+            "c": "21.55 EUR",
+            "d": "23.75 EUR"
+          },
+          "answer": "d",
+          "solution": "SOLUTION: d. On a per-share basis, A pays 0.8*p to acquire the remaining 80% of the shares. As a benefit, post-takeover each share is valued 19 (and A owns 100% of shares). Therefore, A makes a profit if 0.8*p<19, i.e. p<23.75. Notice that the existing T shareholders will tender their shares to A only if A offers more than 19 EUR, so this gives A room for a profitable offer that is going to be accepted."
+        },
+        {
+          "question": "A company issued new shares through a cash-only SEO. The market price of the company share before the SEO is 10 EUR, while the issuing price of the SEO is 9 EUR. Before the SEO, there were 500,000 shares outstanding, while at the SEO the firm issued 250,000 new shares. The fees paid by the company for the SEO were equal to 250k EUR. Suppose that it is known that the proceeds from the SEO would be invested by the firm in a new project whose NPV equals 350k EUR. What is the share price after the SEO?",
+          "options": {
+            "a": "9.1 EUR",
+            "b": "9.5 EUR",
+            "c": "9.8 EUR",
+            "d": "10 EUR"
+          },
+          "answer": "c",
+          "solution": "SOLUTION: c. p_post = (Market Cap pre + Capital raised with the SEO + NPV) / ( N_pre + N_issue). In this case: Market Cap Pre = 500k * 10EUR = 5 mln EUR Capital raised at the SEO = N_issue * p_issue – Fees = 250k*9 – 250k = 2 mln EUR NPV = 350k N_pre + N_issue = 500k + 250k = 750k shares And then p_post = (5+2+0.350) mln EUR/750k = 9.8 EUR"
+        },
+        {
+          "question": "Sometimes it is useful to represent risky corporate debt using options. In doing this, you can think that debt holders of risky corporate debt:",
+          "options": {
+            "a": "Hold 100% of firm equity and have bought a call option on the firm assets with a strike price equal to the required debt payment",
+            "b": "Hold 100% of firm equity and have sold a call option on the firm assets with a strike price equal to the required debt payment",
+            "c": "Hold 100% of firm equity and have sold a put option on the firm assets with a strike price equal to the required debt payment",
+            "d": "Hold 100% of firm equity and have bought a put option on the firm assets with a strike price equal to the required debt payment"
+          },
+          "answer": "b",
+          "solution": "SOLUTION: Risky debt = equity – call (see graphically)"
+        },
+        {
+          "question": "Consider a firm which is run inefficiently by its current management team. Suppose that the stock market anticipates the increase in firm value due to a takeover that generates shareholders' value by replacing the inefficient management. Which of the following statements is FALSE?",
+          "options": {
+            "a": "The price of the firm stock increases or stays constant even if everybody knows that the company is badly run",
+            "b": "The price of the firm declines in anticipation of the future takeover",
+            "c": "The increase in the firm stock price depends on the market anticipations about the future synergies created by the takeover",
+            "d": "Acquiring this badly run company might become unprofitable even for an acquirer who can improve the management quality"
+          },
+          "answer": "b",
+          "solution": "SOLUTION: the sentence “the market anticipates the increase in firm value due to an efficient takeover” means that the stock price of this badly run company increases, in anticipation of such a takeover. Therefore, the stock price increases (or stays constant), but does not decline (a is true while b is false). C and d are also true because the stock price is the present value of future cash-flows generated by the firm (and henceforth reflects the expected future synergies), and a higher stock price implies that taking over such company becomes more expensive. This in turn could make the takeover unprofitable: the acquirer needs to pay a premium on top of an increased stock price."
+        },
+        {
+          "question": "A firm is thinking of undertaking a new project, that costs 5 mln EUR. The firm is owned by an entrepreneur who is willing to invest 250k EUR in the new project, while the remaining 4750k EUR are raised by selling new (outside) equity. The new project can be implemented in two different versions. The entrepreneur will choose which of the two versions to implement after having raised the funds necessary to undertake the project. The choice of the entrepreneur cannot be fixed by contract by the outside equity-holders. Both versions of the project can be successful or not. If they are successful they provide a payoff equal to R=8 mln EUR, while if they are not successful they earn a zero payoff. Version \"H\" is successful with probability 2/3, while version “L” is successful with probability ½. The entrepreneur earns private benefits B = 100k EUR if and only if version “L” is implemented (and zero if \"H\" is implemented). Suppose that you are an investor who is considering buying the shares issued by this firm in order to raise the funds necessary to invest in this project. Can you credibly expect that the entrepreneur will implement version “H” of the project? What is the rate of return you expect to earn on your investment, if you decide to buy these new shares of the firm?",
+          "options": {
+            "a": "No; The rate of return you expect to earn is negative",
+            "b": "No; The rate of return you expect to earn is zero",
+            "c": "Yes; The rate of return you expect to earn is positive",
+            "d": "Yes; The rate of return you expect to earn is 20%"
+          },
+          "answer": "a",
+          "solution": "SOLUTION: write the IC constraint of the entrepreneur who got the funds necessary to invest in the new project, and verify whether it is satisfied: (250/5000) * (2/3) * 8000 >= (250/5000) * (1/2) * 8000 + 10 The IC-constraint is not verified: you, as an outside investor, can credibly expect that the entrepreneur will invest in the “L” version of the new project. Therefore outside investors expect a payoff: (0.95*1/2*8000)=3800k EUR On an initial investment of 5000k – 250k = 4750k EUR you would obtain an expected return of (3800-4750)/4750 = -20% < 0."
+        },
+        {
+          "question": "Consider an IPO in which the underwriter obtains a “Greenshoe provision\" that allows to borrow from the issuer 350 thousands shares and sell them to the public at the IPO price, which is 32.5 EUR. The underwriter receives a discount equal to 2.5 EUR per share. At the end of the first trading day, the stock price is 35 EUR. After one month of trading the underwriter needs to cover its position, short of 350k shares due to the Greenshoe provision. At the end of this first trading month, the price of the stock is 29 EUR. In order to cover its short position, the underwriter buys the shares on the market at the market price. What is the underwriter's profit?",
+          "options": {
+            "a": "875k EUR",
+            "b": "1225k EUR",
+            "c": "1225k EUR",
+            "d": "570k EUR"
+          },
+          "answer": "c",
+          "solution": "SOLUTION: The underwriter is short of 350k shares borrowed from the issuer thanks to the Greenshoe provision at the IPO. The underwriter sold this 350k shares at the IPO price, 32.5 EUR. Now the underwriter buys 350k shares at the market price, in order to cover its short position. Its profit then equals (32.5 - 29) EUR x 350k shares = 1.225.000 EUR."
+        },
+        {
+          "question": "There are two riskless, zero-coupon bonds currently traded on the financial markets. One is a bond issued by a non-environmentally friendly company, Poll Co., and the other one is a green bond issued by an environmental friendly company, Bee Co. The face value of the two bonds equals 1000 EUR, and both bonds have maturity of 5 years. The yearly risk-free interest rate is equal to r = 1%. There are two kinds of investors on the bond market. One type is purely financial investors, who only look at the financial performance of their investment when choosing in which bond to invest in. The second type is environmental-engaged (\"green\") investors, who are willing to earn a 0.25% lower return to invest in an environmentally friendly security. What is the difference between the prices of the two bonds (approximated to the second decimal), assuming that: (1) financial investors are willing to buy both bonds, (2) green investors do not buy Poll bonds, (3) there are enough financial investors to buy all the Poll, and (4) there are enough \"green\" investors to buy all the Bee bonds?",
+          "options": {
+            "a": "The Bee bond costs 5.25 EUR more than the Poll bond",
+            "b": "The Bee bond costs 11.87 EUR more than the Poll bond",
+            "c": "The Bee bond costs 5.25 EUR less than the Poll bond",
+            "d": "The Bee bond costs 11.87 EUR less than the Poll bond"
+          },
+          "answer": "b",
+          "solution": "SOLUTION: a (This is a typo in the document, the calculation leads to b). Compute the price of the two bonds, as the PV of the future cash-flow paid by each bond (in both cases, only the Face Value = 1000 EUR, since these are zero-coupon bonds): P (Poll) = 1000 / (1.01^5) = 951.46 EUR P (Bee) = 1000 / (1.0075^5) = 963.33 EUR because the green investors are willing to buy the Bee bond even if this pays a yield of 0.75% (= 0.25% less than the risk-free rate). The Bee bond therefore costs 11.87 EUR more than the Poll bond."
+        },
+        {
+          "question": "An entrepreneur can develop a new project that costs I. The project earns an uncertain payoff in one year, equal to 20 mln EUR in case of success, and equal to 0 in case of failure. The probability of success equals 3/4. The entrepreneur is able to obtain 2 mln EUR from this project in case of success, while (s)he knows that (s)he will get zero in case of failure. The entrepreneur has no funds to invest in the project, and asks some external, risk-neutral investors to finance this project. Suppose the risk-free interest rate on the financial markets is 7%. What is the maximum amount risk-neutral investors are willing to invest in this project?",
+          "options": {
+            "a": "6.56 mln EUR",
+            "b": "11.23 mln EUR",
+            "c": "12.62 mln EUR",
+            "d": "18 mln EUR"
+          },
+          "answer": "c",
+          "solution": "SOLUTION: c The income that the entrepreneur can offer to risk-neutral, outside investors, if they accept to invest in this project is, at most, equal to (3/4)*(20 - 2) = 13.5 mln EUR. Risk-neutral investors want to earn (at least) the risk-free rate on this investment (i.e. 7%), and therefore are willing to invest 13.5 mln EUR/1.07 = 12.62 mln EUR (at most)."
+        },
+        {
+          "question": "\"Relative Performance Evaluation\" (RPE) is a practice according to which:",
+          "options": {
+            "a": "Top-management pay is related to the accounting performance of its firm, measured in terms of earnings",
+            "b": "Top-management pay is related to the improvement of its firm stock price, relative to the dynamics of the price of an index of the financial markets",
+            "c": "Top-management pay is related to the performance of its firm across different years, with a bonus paid only if the firm performance improves across time",
+            "d": "Top-management pay is related not to the absolute performance of its firm, but to its firm performance relative to other, competing firms' performance"
+          },
+          "answer": "d",
+          "solution": "SOLUTION: d The important element is that top-management receives a bonus if its firm overperforms, on average, the competitors."
+        }
+      ]
+    }
+  ]
+}

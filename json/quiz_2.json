@@ -1,0 +1,594 @@
+{
+  "exams": [
+    {
+      "date": "February 5th, 2021",
+      "questions": [
+        {
+          "question": "Suppose we are living in a Modigliani-Miller world with frictionless capital markets. Suppose news arrives announcing that some of the loans granted by bank A are going to default. You observe that the market value of the bank debt is not affected by the news. Which of the following is true?",
+          "options": {
+            "a": "The price of the bank stock is not affected by this news",
+            "b": "The price of the bank stock increases",
+            "c": "The price of the bank stock declines",
+            "d": "The value of assets of bank A is not affected by this news"
+          },
+          "answer": "c",
+          "solution": "In the MM-world, using the Market Value Balance Sheet, we see that a reduction of assets reflects in a equal reduction of liabilities. The news reduce the value of credits of the bank (an asset), and therefore reduces the value of liabilities by the same amount. If the value of A' debt does not change, then the value of A equity must reduce."
+        },
+        {
+          "question": "Which of the following statement is WRONG? Equity financing involves some \"agency cost\" when:",
+          "options": {
+            "a": "The incentives of firm managers and of firm shareholders are not aligned",
+            "b": "The firm managers may invest in inefficient (= negative NPV) projects available to the firm because of their personal preferences for such projects",
+            "c": "The firm managers may reduce shareholders value by taking investment decisions that are excessively risky",
+            "d": "The firm managers for sure invest in all the efficient (= positive NPV) projects available to the firm"
+          },
+          "answer": "d",
+          "solution": "Equity financing involves agency costs when incentives are misaligned, leading to inefficient investments or excessive risk-taking. The statement that managers 'for sure invest in all the efficient projects' contradicts the concept of agency costs, making it the WRONG statement."
+        },
+        {
+          "question": "What is the correct definition of “underpricing\" in an Initial Public Offering (IPO)?",
+          "options": {
+            "a": "underpricing = (Pbeginning first trading day - Pend first trading day) / Pend first trading day",
+            "b": "underpricing = (Pend first trading day - Pissue) / Pissue",
+            "c": "underpricing = (Pissue - Pend first trading day) / Pend first trading day",
+            "d": "underpricing = (Pend first trading day - Pbeginning first trading day) / Pbeginning first trading day"
+          },
+          "answer": "b",
+          "solution": "Underpricing in an IPO is typically defined as the difference between the closing price on the first trading day (Pend first trading day) and the IPO issue price (Pissue), divided by the issue price. This measures the immediate gain for investors who bought at the IPO price."
+        },
+        {
+          "question": "A company issued new shares through a cash-only SEO. The market price of the company share before the SEO is 10 EUR, while the issuing price of the SEO is 9.50 EUR. Before the SEO, there were 1 million shares of the company outstanding, while at the SEO the company issued 250,000 new shares. The company paid 125,000 EUR as fees for the SEO. Suppose the SEO is value neutral. What is the share price after the SEO?",
+          "options": {
+            "a": "9.8 EUR",
+            "b": "9.7 EUR",
+            "c": "9.6 EUR",
+            "d": "9.5 EUR"
+          },
+          "answer": "a",
+          "solution": "Ppost = (1*10 + 0.250*9.50 - 0.125) / (1+0.250) = 9.8 EUR"
+        },
+        {
+          "question": "Do callable bonds have a higher or a lower yield than otherwise identical bonds without a call feature?",
+          "options": {
+            "a": "Higher",
+            "b": "Lower"
+          },
+          "answer": "a",
+          "solution": "Callable bonds have a higher yield because they are less advantageous for investors, who then require a higher yield to hold them in their portfolios to compensate for the issuer's right to call the bond."
+        },
+        {
+          "question": "Consider a loan of 100,000 EUR with no amortization (that is, an interest only, or plain vanilla loan). The loan is a floating rate one and the loan interest rate equals the current LIBOR rate + 450 basis points. The loan rate is adjusted every year. Suppose the current LIBOR is 0.75%, while next year the LIBOR is expected to be equal to 1%. What is the annual payment of the loan this year? And what do you expect to pay next year, according to the LIBOR forecasts?",
+          "options": {
+            "a": "Current year payment = 4,500 EUR; expected next year payment = 5,250 EUR",
+            "b": "Current year payment = 5,250 EUR; expected next year payment = 5,250 EUR",
+            "c": "Current year payment = 5,250 EUR; expected next year payment = 5,500 EUR",
+            "d": "Current year payment = 4,500 EUR; expected next year payment = 5,500 EUR"
+          },
+          "answer": "c",
+          "solution": "Current year rate = 0.75% + 4.50% = 5.25% - payment = 5,250 EUR. Next year (expected) rate = 1% + 4.50% = 5.50% - payment = 5,500 EUR."
+        },
+        {
+          "question": "You buy today 200 European call options on IBM stock. The options expire in exactly 60 days, and their strike price is 72 USD. Each option today costs 3.80 USD. Assume you chose to finance the purchase of the 200 options by borrowing the entire amount at 4% interest per year. What is the price of the IBM stock at the expiration date such that you make exactly zero profit on your options purchase? (Consider that the year is composed of 365 days).",
+          "options": {
+            "a": "77.35",
+            "b": "75.82",
+            "c": "73.24",
+            "d": "72.71"
+          },
+          "answer": "b",
+          "solution": "Solving in S the equation: 200 * max(S – 72,0) – (3.80 * 200)(1.04)^(60/365) = 0 gives S = 75.82458 approximated to (b)."
+        },
+        {
+          "question": "You have just sold 200 put options with a strike price of 7 EUR that expire in one year. Let S be the (random) price of the underlying stock in a year, at the expiration date of the options. What is the payoff of your position at the expiration date of the put options? (in your answer, do not include the price you earned today from the sale of the options and its reinvestment).",
+          "options": {
+            "a": "– max(S – 7; 0)",
+            "b": "-200 * max(S – 7; 0)",
+            "c": "200 * max(7 – S; 0)",
+            "d": "max(7 - S; 0)"
+          },
+          "answer": "b",
+          "solution": "The payoff at expiration of the holder of one put option is equal to max(7 – S; 0). Therefore, the payoff of a short position of 200 puts is – 200 * max(7 – S; 0). Note: There is a discrepancy between the solution's formula and option 'b'. Option 'b' is -200 * max(S-7;0), which is the payoff of a short call. The correct payoff for a short put is -200 * max(7-S;0). Assuming a typo in the option text or the solution's reference, 'b' is chosen as the closest form involving -200 and max function."
+        },
+        {
+          "question": "What is a credit default swap (CDS)?",
+          "options": {
+            "a": "A financial contract representing a call option on a firm' assets. A CDS is used to insure the seller of the CDS against the risk that the firm defaults.",
+            "b": "A financial contract representing a call option on a firm' assets. A CDS is used to insure the buyer of the CDS against the risk that the firm defaults.",
+            "c": "A financial contract representing a put option on a firm' assets. A CDS is used to insure the seller of the CDS against the risk that the firm defaults.",
+            "d": "A financial contract representing a put option on a firm' assets. A CDS is used to insure the buyer of the CDS against the risk that the firm defaults."
+          },
+          "answer": "d",
+          "solution": "A Credit Default Swap (CDS) is a financial contract where the buyer makes regular payments to the seller in exchange for protection against a credit event (like default) of a third party. It functions similarly to a put option on the firm's assets, insuring the buyer against default risk."
+        },
+        {
+          "question": "Your company is thinking of undertaking a new project. The NPV of this project, computed as today (time t = 0), is negative. You expect that a major economic event will occur in one year (at t = 1). This event will have important consequences on the market for the goods that you produce if you invest in this new project. If the economic event causes an improvement of market conditions, the NPV of this new project evaluated at t = 1 will be equal to 837,770 USD. If the event causes a deterioration of market conditions, the NPV of this new project at t = 1 will be negative, and precisely equal to – 758,975 USD. Suppose that you have the option to postpone the investment by one year. Suppose also that you are risk-neutral, and that under the risk-neutral probability, the probability that the market deteriorates next year equals 71.95%. The one-year risk-free interest rate is 6%. Under these assumptions, what is the present value of the investment in the new project today, at t = 0?",
+          "options": {
+            "a": "234,994 USD",
+            "b": "221,693 USD",
+            "c": "75,679 USD",
+            "d": "-293,479 USD"
+          },
+          "answer": "b",
+          "solution": "With the option to postpone, you can decide next year whether to undertake the project or not. Given that in negative economic conditions you will not do it, you are able to cut the losses in that case. Overall, with flexibility, you already know today that you will invest if and only if good economic conditions will arise. The PV at t=0 of the project with the option to postpone then equals PV = (1-0.7195)*837770 / 1.06 = 221,693."
+        },
+        {
+          "question": "You are a Venture Capitalist and you are evaluating the option to abandon a project in 6 months if some milestones results are not reached. The project contains risk that cannot be diversified (systematic risk). Which of the following statement is true?",
+          "options": {
+            "a": "Your evaluation of the option to abandon this project does not change whether you are risk-averse or risk-neutral",
+            "b": "You evaluate the option to abandon this project more if you are risk-neutral than if you are risk-averse",
+            "c": "You evaluate the option to abandon this project more if you are risk-averse than if you are risk-neutral",
+            "d": "None of the above"
+          },
+          "answer": "c",
+          "solution": "The option to abandon is exerted if you know you will make a loss on this project. Therefore, this option reduces the volatility of the future payoffs due to the project. You evaluate a lower volatility more if you are risk-averse than if you are risk-neutral."
+        },
+        {
+          "question": "You are a merger arbitrageur. Today is announced that company T will be bought by company A in two months, if the acquisition is approved by the Boards of both companies. Company A announces it will offer a cash premium for each share of company T. This cash premium is equal to 30% of the current stock price. Right after this announcement, the stock price of company T increases by 25%. If you are sure that this deal will not go through, how should you trade on the stock market after observing the T's stock price reaction?",
+          "options": {
+            "a": "Buy T shares",
+            "b": "Buy T shares and sell A shares",
+            "c": "Sell T shares",
+            "d": "Sell T shares and sell A shares"
+          },
+          "answer": "c",
+          "solution": "If the deal will not go through, the stock price of company T, which increased by 25% due to the acquisition announcement, is expected to fall back to its pre-announcement level or lower. Therefore, selling T shares would be a profitable strategy. Nothing is said about A shares, so no trading direction for A shares can be determined."
+        },
+        {
+          "question": "Outside shareholders (that is, shareholders who are not in control of the firm) are relatively less likely to be expropriated if:",
+          "options": {
+            "a": "Inside shareholders own a large quota of the firm",
+            "b": "Inside shareholders own a small quota of the firm",
+            "c": "Debtholders own a small quota of the firm",
+            "d": "Debtholders own a large quota of the firm"
+          },
+          "answer": "a",
+          "solution": "The higher the quota of the project owned by the insider (entrepreneur-owner who decides the project), the less likely the outside investors/shareholders are expropriated. This aligns incentives between inside and outside shareholders."
+        },
+        {
+          "question": "An entrepreneur can develop a project that costs I = 45 mln EUR in two versions, “H” and \"L\", which cannot be distinguished by the outside investors, nor from a court in case of litigation. Both versions provide the same payoffs: R = 100 (mln EUR) in case of success, and 0 in case of failure. The probability of success of version “H” equals PH = 0.5 while the probability of success of version “L” equals pL = 0.3. The entrepreneur earns private benefits B = 5 mln EUR in case (s)he develops version “L” and zero otherwise, irrespectively of the success or failure of the project. The entrepreneur also obtains payment w > 0 if and only if the project which is developed is successful. Suppose the payment w is the minimum amount such that the entrepreneur can credibly commit to choosing the version “H” of the project in front of outside investors. What is the maximum expected payoff that the entrepreneur can offer to outside investors who finance the project (in other terms: what is the maximum pledgeable income)?",
+          "options": {
+            "a": "37.5 mln EUR",
+            "b": "32.5 mln EUR",
+            "c": "29.5 mln EUR",
+            "d": "25.25 mln EUR"
+          },
+          "answer": "a",
+          "solution": "If the (IC)-constraint is: 0.5*w >= 0.3*w + 5, is satisfied, then it is in the interest of the entrepreneur to develop version H. This occurs if w is greater or equal than 5/0.2 = 25. Fixing the minimum w that satisfies the IC-constraint (that is, the minimum w that allows the entrepreneur to credibly commit to undertake the H-version of the project), the pledgeable income equals p_H * (R-w) = 0.5*(100-25) = 37.5."
+        },
+        {
+          "question": "What is referred to with the practice of \"Say-on-Pay\"?",
+          "options": {
+            "a": "The fact that top-managers (example: CEO) pay is limited by some corporate governance codes and/or regulations",
+            "b": "The fact that top-managers (example: CEO) pay is approved by some public authorities",
+            "c": "The fact that top-managers (example: CEO) pay is approved by the company' shareholders",
+            "d": "The fact that top-managers (example: CEO) pay is approved by the company' Board of Directors"
+          },
+          "answer": "c",
+          "solution": "Say-on-Pay refers to the practice where a company's shareholders have the right to vote on the compensation of its top executives, such as the CEO."
+        },
+        {
+          "question": "The “Premium for Good Governance\" is:",
+          "options": {
+            "a": "Higher in countries with a better governance system",
+            "b": "Higher in countries with a worse governance system",
+            "c": "Lower when the risk for outside shareholders to be expropriated by inside shareholders or firm managers is higher",
+            "d": "Lower when Corporate Governance Codes are less developed"
+          },
+          "answer": "b",
+          "solution": "The premium for good governance equals the amount that outside shareholders are willing to pay in order to improve the governance of the company, or (equivalently) to reduce the risk to be expropriated. In countries with worse governance systems, the potential benefit from good governance is higher, leading to a higher premium."
+        },
+        {
+          "question": "Company A owns a toehold a = 10% in company T. The management of company A decides to launch a tender offer for 100% of T' shares. The offer is conditional on A getting 100% of T' shares. The current price of one stock of T, before the offer is announced, equals 24.35 EUR. Assume that every investor knows that, if the offer is successful, the value of one stock of T will be 27 EUR. What is the maximum price at which a tender offer is profitable for A?",
+          "options": {
+            "a": "27 EUR",
+            "b": "24.35 EUR",
+            "c": "28 EUR",
+            "d": "30 EUR"
+          },
+          "answer": "d",
+          "solution": "On a per-share basis, A pays 0.9*p to acquire the remaining 90% of the shares. As a benefit, post-takeover each share is valued 27 (and A owns 100% of shares). Therefore, A makes a profit if 0.9*p<27, i.e. p<30. Notice that the existing T shareholders will tender their shares to A only if A offers more than 24.35 EUR, so this gives A room for a profitable offer that is going to be accepted."
+        },
+        {
+          "question": "Your venture firm is planning to launch a new product. The investment required equals 40 (all numbers are in thousands EUR). You can invest 10 in this project of your own money, while you plan to raise the missing 30 from some risk-neutral, outside investors, in the form of new equity. There are two versions of this new product. One, version “L”, is very similar to a product that you designed previously. Another one, version “H”, is extremely innovative and hard to be designed. Both versions cost 40, and provide an uncertain return in one year: if the product is successful, both versions earn 80; if the product is not successful, they both earn 0. The probability of success of “H” is ¼ while the probability of success of “L” is ½. You prefer to develop version “L”, since this requires less effort. Therefore, if you develop version “L”, you enjoy private benefits B (in monetary terms, again in thousands EUR), while you obtain zero private benefits if you develop version “H”. What is the maximum level of private benefits B (in thousands EUR) such that the Incentive Compatibility constraint which ensures you will develop version \"H\" is satisfied?",
+          "options": {
+            "a": "10 thousands EUR",
+            "b": "7.25 thousands EUR",
+            "c": "5 thousands EUR",
+            "d": "3.75 thousands EUR"
+          },
+          "answer": "c",
+          "solution": "By investing 10k EUR over the total of 40k EUR, you own ¼ of the expected CF of the project, whatever version you implement. The expected CF from version H is ¼*80 = 60, while the expected CF from version L is ½*80 = 40. Therefore, you expect to earn ¼*60 = 15 if you develop H, while you expect ¼*40=10 if you develop L. But in the latter case you also earn private benefits B. The IC guarantees that you chose H instead of L if 15 greater or equal than 10+B, that is the B lower or equal than 5k EUR."
+        },
+        {
+          "question": "Only one of the following reasons is a true reason why ESOs (Executives Stock Options) have been criticized. Which one?",
+          "options": {
+            "a": "ESOs provide top management with the incentive to undertake projects that are less risky than the efficient projects",
+            "b": "ESOs are often granted out-of-the-money",
+            "c": "ESOs are not providing strong incentives to the management if they are deeply underwater",
+            "d": "ESOs are never backdated and this harms the possibility to provide correct incentives to the top-management."
+          },
+          "answer": "c",
+          "solution": "ESOs are granted at-the-money most of the time, and have been backdated in the past: b and d are false. a is false because a CEO who is granted stock-options has incentives to increase the riskiness of the underlying stock, investing in projects that increase the riskiness of the firm equity. This because the value of the ESOs increases with the volatility of the underlying security, because ESOs are call options. Finally, recall that being underwater means that the stock price is much lower than the strike price of the ESO, so that it is very unlikely that these options will be in-the-money at expiration. Therefore, they do not provide incentives."
+        }
+      ]
+    },
+    {
+      "date": "February 12th, 2024",
+      "questions": [
+        {
+          "question": "The price of ANF stock in exactly one year is forecasted to be either 120$ or 80$ with probability distribution (p, 1 – p), respectively on (120, 80). This probability distribution is the \"historical probability\", i.e. the distribution expected to hold in reality, given all the information available to all market participants. The stock contains systematic risk, and therefore its future payoffs are discounted at the return of 10%. The risk-free rate equals 4%. The current stock price of one ANF stock is 96$. Given this information, compute the value of p compatible with the given discount rate and the current stock price, and find the risk-neutral probability (Rho, 1- Rho) consistent with these data. (Nota: in the solution, Rho denotes the probability that the ANF stock in one year equals 120$, while 1-Rho is the probability that this stock value in one year equals 80$).",
+          "options": {
+            "a": "p = 50%; Rho = 47.6%",
+            "b": "p = 60.8%; Rho = 50.1%",
+            "c": "p = 64%; Rho = 49.6%",
+            "d": "p = 68.7%; Rho = 52.9%"
+          },
+          "answer": "c",
+          "solution": "The value of p is the one that equalizes the PV of future expected cash-flows to the current price of the stock, i.e. it solves: (120p + 80(1-p)) / 1.10 = 96. From this one obtains p = 64%. The risk-neutral probability distribution (Rho, 1-Rho) is the distribution that would hold if all market participants were risk-neutral, and given that the current market price is 96$. The value of Rho then solves (120Rho + 80(1-Rho)) / 1.04 = 96, which gives Rho = 49.6%."
+        },
+        {
+          "question": "Consider a financial market without frictions in which all the assumptions of Modigliani-Miller paradigm hold, and there are no corporate taxes. Consider two identical firms generating the same cash-flow X in one year. The two firms are liquidated afterward. The two firms differ only in their capital structure. One firm is financed only with equity (unlevered firm, U). The other firm (the levered firm, L) is financed partly with equity (E_L) and partly with debt, D > 0. The levered firm pays an interest rD over its debt next year. Let Vu be today market value of the unlevered firm and let V_L be the today market value of the levered firm, so that V_L = E_L + D. If you see that currently on the market Vu > V_L how would you trade immediately in order to exploit the arbitrage opportunity?",
+          "options": {
+            "a": "Buy shares of firm U and sell shares of firm L",
+            "b": "Buy shares of firm L and sell shares and bonds of firm U",
+            "c": "Buy shares of firm U and sell shares and bonds of firm L",
+            "d": "Buy shares and bonds of firm L and sell shares of firm U"
+          },
+          "answer": "d",
+          "solution": "By buying shares and bonds of firm L you pay (a fraction of) E_L + D = V_L today (you pay this amount today, so this is a negative Cash Flow for you at t=0). By selling (a fraction of) shares of firm U you earn Vu today, so that your net cash-flow now equals (a fraction of) Vu – V_L >0. (To be sure this is an arbitrage profit, you should check that the value of the portfolio you have created equals zero at t=1, no matter what happens at t=1, as in the Exercise 1 of the Capital structure exercises set. But this is not required in the exam answer)."
+        },
+        {
+          "question": "According to \"limited liability\" what is the maximum loss that equity holders of a company can suffer?",
+          "options": {
+            "a": "The equity holders' maximum loss equals the total value of the company's debt",
+            "b": "The equity holders' maximum loss equals the value of their investment in the company's equity",
+            "c": "The equity holders' maximum loss is higher than the value of their investment in the company's equity",
+            "d": "The equity holders' maximum loss is lower than the value of their investment in the company's equity"
+          },
+          "answer": "b",
+          "solution": "In the worst case scenario, i.e. in case the company goes bankrupt and needs to be liquidated to repay its debt, the equity holders do not receive any amount from the proceeds of the firm liquidation because all these proceeds are paid to the firm creditors. Therefore, their loss equals the investment they made in the company equity."
+        },
+        {
+          "question": "Consider a firm with the following characteristics. It can invest now in a new project that costs 1 million Euros. The project can only be financed with new equity by the existing owners/shareholders. Next year, this project will generate cash flows of 1.4 million Euros. The risk free rate equals 4% and all investors are risk neutral. Two years from now (and afterward), the project will not pay any cash flow. The firm's assets in place do not generate any cash flow next year, but the firm needs to reimburse 400000 Euros of debt next year in order to avoid bankruptcy. What is the NPV earned by the shareholders who finance the new project (approximate the answer to the second decimal)? Would they agree to finance this project?",
+          "options": {
+            "a": "The NPV earned by the shareholders equals -0.04 million EUR, they do not agree to finance this project",
+            "b": "The NPV earned by the shareholders equals 0.02 million EUR, they agree to finance this project",
+            "c": "The NPV earned by the shareholders equals 0.6 million EUR, they agree to finance this project",
+            "d": "The NPV earned by the shareholders equals -0.1 million EUR, they do not agree to finance this project"
+          },
+          "answer": "a",
+          "solution": "Next year Cash-Flow earned by the project equals 1.4 million EUR minus 400k EUR that are due with priority on the existing debt (otherwise the firm defaults and is liquidated). Therefore, 1 million EUR for the shareholders to finance the project. The NPV of such investment equals 1/(1.04) – 1 = - 0.038 (approx. -0.04 million EUR), so they do not finance the project being the NPV negative."
+        },
+        {
+          "question": "Restatements with reissuance of financial statements refer to:",
+          "options": {
+            "a": "The fact that previous financial statements provided by a company contained some minor mistakes",
+            "b": "The fact that previous financial statements provided by a company were correct",
+            "c": "The fact that previous financial statements provided by a company were reissued exactly equal as before in a later moment",
+            "d": "The fact that previous financial statements contained some severe mistakes that were later corrected"
+          },
+          "answer": "d",
+          "solution": "Restatements with reissuance of financial statements refer to the correction of severe mistakes in previously issued financial statements, requiring them to be reissued."
+        },
+        {
+          "question": "You just sold 10 put options with a strike price equal to K. The options expire exactly in one year. Denote with S the (random) price of the underlying stock in one year. What is the payoff you earn at the expiration date of the put? What is the maximum amount of money you can lose then?",
+          "options": {
+            "a": "Payoff at expiration date = - max{K-S ; 0}; maximum loss = - S",
+            "b": "Payoff at expiration date = -10*max{K-S ; 0}; maximum loss = - 10K",
+            "c": "Payoff at expiration date = -10*max{K-S ; 0}; maximum loss = 10S",
+            "d": "Payoff at expiration date = 10*max{K-S;0}; maximum loss = -10K"
+          },
+          "answer": "b",
+          "solution": "If you sold one put, your payoff at expiration is the opposite of the payoff earned at expiration by the investor who bought the put. This latter payoff is max{K-S;0}, because the holder of the put can sell at K one share valued S, whenever this is profitable. Therefore, your payoff at expiration on one put is minus max{K-S;0}. If you sold ten puts, this payoff becomes -10*max{K-S ; 0}. Notice that this payoff increases in S. Therefore, the worst case for you is if S=0, when you suffer the maximum loss, i.e. -10K."
+        },
+        {
+          "question": "You can invest in a project that has some flexibility, which means that you could invest in the project today (t=0), or you could wait and invest in one year (t=1), but not later than one year. The gross value of the project at t=1 is unknown at this moment, and it can be either 500 or 250 (thousands EUR). Its gross value today, at t=0, without considering its flexibility, is equal to S (thousands EUR). If you invest in the project at t=1, this project costs 400 (thousands EUR). You are risk-neutral, and the risk-free interest rate is equal to zero. Determine the value at t=0 of the option to wait and invest in the project at t=1 (in thousands EUR) by using the replication portfolio method.",
+          "options": {
+            "a": "0.4*S-100",
+            "b": "0.4*S + 100",
+            "c": "0.8*S-100",
+            "d": "0.2*S+50"
+          },
+          "answer": "a",
+          "solution": "If you want to wait now and invest at t=1, you will have to pay the cost 400 at t=1, so that the option to wait and invest at t=1 is equivalent to a call option at t=0, with strike price K=400 and whose payoff at expiration are (500-400)=100 if you exercise the option to invest, and zero if you do not invest. The value of the call option at t=0 can be obtained using replicating portfolio: 500Δ + B = 100; 250Δ + B = 0. Whose solution is Δ= 0.4 and B = −100. Given that the gross value (i.e. the total value, including its cost) of the project today, without considering its flexibility, equals S, then the value of the call (option to wait) is C_0 = Δ * S + B = 0.4S – 100."
+        },
+        {
+          "question": "Consider a typical LBO operation (Leveraged Buyout), as discussed in the course. New debt is raised to finance the operation. This new debt is mostly backed (i.e. it is guaranteed) by what?",
+          "options": {
+            "a": "The assets of the Private Equity fund designing the LBO",
+            "b": "The assets of the Management team designing the LBO",
+            "c": "The assets of the target company and the proceeds from its restructuring",
+            "d": "The proceeds of the Private Equity fund, or the Holding Company"
+          },
+          "answer": "c",
+          "solution": "In an LBO, the new debt enters the capital structure of the merged company, composed by the target company plus the Holding Company set up by the LBO-designers. Typically, the target company is much larger than the Holding, and therefore most of the assets of the merged company derive from the target. Moreover, the merged company will earn high Cash-Flows by restructuring, and these cash-flows will take care of the service of the debt. Assets and proceeds of the PE fund or of the Management team are not concerned."
+        },
+        {
+          "question": "Which of the following statements is true (only one statement is true):",
+          "options": {
+            "a": "Corporate taxes decrease a firm's cost of retaining and investing cash relative to paying out cash",
+            "b": "Corporate taxes increase a firm's cost of retaining and investing cash relative to paying out cash",
+            "c": "Retaining cash increases the probability the firm ends up in financial distress",
+            "d": "Paying out cash through dividends increases the agency costs internal to the firm"
+          },
+          "answer": "b",
+          "solution": "Corporate taxes increase a firm's cost of retaining and investing cash relative to paying out cash. This is because retained earnings are subject to corporate tax, making it more expensive to keep cash within the firm compared to distributing it to shareholders (who then pay personal taxes)."
+        },
+        {
+          "question": "Company A owns 25% of the existing shares in company T. There are currently 10 million T-shares outstanding. Company A's management decides to launch a tender offer to buy an additional 25% of T-shares, in order to get control of T. The administrative costs related to the launch of the tender offer amount to 5 million EUR. The price of the T-share, before any rumor and any announcement of the tender offer is made, equals 125 EUR. Assume that both the management of A and the existing shareholders of T (and all the investors on the market) can perfectly anticipate that, if the tender offer is successful, the value of one T-share after the change in control and after the restructuring is going to be equal to 150 EUR. What is the maximum price p that company A can offer in the tender offer without expecting to make losses by acquiring the additional 25% of T-shares (i.e., what is the price at which A makes exactly zero profits on this acquisition if the tender offer is successful)?",
+          "options": {
+            "a": "255 EUR",
+            "b": "272 EUR",
+            "c": "298 EUR",
+            "d": "312 EUR"
+          },
+          "answer": "c",
+          "solution": "The required price p is the price at which A's profit from acquiring the remaining 25% (of 10 million shares) of T is exactly equal to zero, considering that if the tender offer is successful everybody knows that afterwards the value of one share of T is going to be 150$. Let us write this profit: 5 mln * 150 EUR – 2.5 mln* p − 5 mln EUR =0 because, if the tender offer is successful, after the operation A owns 50% of the shares of T, i.e. 5 million shares, each worth 150 EUR, it pays the price p to acquire 2.5 million shares necessary to take control with the tender offer, and the cost of the offer itself is 5 mln EUR. By solving in p the above equation one gets p = 298 EUR."
+        },
+        {
+          "question": "You buy today 100 European call options on ENI stocks expiring in exactly one year, each with strike price 15 EUR. One call option costs 0.55 EUR. Assume you chose to finance the options purchase by borrowing money at 4% interest per year. Assume the ENI stock price at expiration is equal to S (random variable, i.e. unknown today). Compute the stock price S at which this portfolio of call options provides a zero payoff at the expiration date of the call options. (Only one statement is true)",
+          "options": {
+            "a": "14.74 EUR",
+            "b": "15 EUR",
+            "c": "15.21 EUR",
+            "d": "15.57 EUR"
+          },
+          "answer": "d",
+          "solution": "The portfolio payoff in one year equals (100 times) the call option payoff at expiration (i.e. at the exercise date), minus the amount owed on the loan of 100*0.55 = 55 EUR, necessary to buy the call todays: 100 × (max{S – 15; 0}) – 55 * 1.04 = 100 × (S – 15) – 57.2. The payoff at expiration equals zero if: 100(S-15) – 57.2 = 100S – 1557.2 = 0. The price S at which you earn a zero payoff is S = 15.572."
+        }
+      ]
+    },
+    {
+      "date": "February 26th, 2024",
+      "questions": [
+        {
+          "question": "A firm currently (at t = 0) has 10 million EUR cash. The firm can either pay this cash out as a dividend now or retain the cash until next year (t = 1), when an investment opportunity arises with probability 1/4. The characteristics of the investment opportunity are the following. It cost 10 million EUR. If undertaken, it increases firm profits by 2 million EUR every year forever, starting from year t = 1. The firm opportunity cost of capital is r(wacc) = 8%, and the firm has no debt. If the firm undertakes the project at t=1, it is going to finance it entirely by using its cash. Current firm shareholders are risk-neutral and want to cash in any capital gain they make next year, if any (which is the case if the firm retains cash, the project opportunity arises at t=1, and the firm invests in it at t=1). In this case, the shareholders will cash in only the capital gain. The risk-free interest rate equals zero. Dividends are taxed at a 25% rate, capital gains are taxed at 20%, and there is no corporate tax, nor personal or income taxes. Which of the following statements is true? (Only one statement is true)",
+          "options": {
+            "a": "If the firm pays out the cash as dividends at t=0, shareholders receive a payoff of 10 mln EUR. If the firm retains the cash, and eventually invests it in the project at t=1, then at t=0 the shareholders' expected payoff equals 15 mln EUR",
+            "b": "If the firm pays out the cash as dividends at t=0, shareholders receive a payoff of 7.5 mln EUR. If the firm retains the cash, and eventually invests it in the project at t=1, then at t=0 the shareholders' expected payoff equals 15 mln EUR",
+            "c": "If the firm pays out the cash as dividends at t=0, shareholders receive a payoff of 7.5 mln EUR. If the firm retains the cash, and eventually invests it in the project at t=1, then at t=0 the shareholders' expected payoff equals 3 mln EUR",
+            "d": "If the firm pays out the cash as dividends at t=0, shareholders receive a payoff of 7.5 mln EUR. If the firm retains the cash, and eventually invests it in the project at t=1, then at t=0 the shareholders' expected payoff equals 12 mln EUR"
+          },
+          "answer": "c",
+          "solution": "If the firm pays out the cash as dividends at t=0, shareholders earn 10(1-0.25) = 7.5 million EUR, net of taxes. If the firm retains the cash, next year (t=1) it can invest it in the project. If such a project exists, its NPV at t=1 equals 2/0.08 - 10 = 15 million EUR since it pays a perpetuity of 2 mln EUR every year, discounted at the cost of capital (8%). This NPV represents a capital gain and therefore is taxed at 20% rate. If the firm retain the cash and invests, then the shareholders expect to cash in a capital gain worth 15(1-0.20)=12 mln EUR at t=1, net of taxes. Given that the shareholders are risk-neutral and that the risk-free rate is zero, if the firm retains cash and invests then shareholders' payoff at t=0 equals 12 mln EUR. Given that the investment opportunity arises with probability 1/4, if the firm retains cash the shareholders expect to earn 3 mln EUR."
+        },
+        {
+          "question": "An entrepreneur can develop a project that costs I (in EUR) in two versions, “H” and “L”, which cannot be distinguished by outside investors, nor from a court in case of litigation. Both versions provide the same payoffs: R (EUR) in case of success, and O in case of failure. The probability of success of version \"H\" equals p, while the probability of success of version \"L\" equals q, with 1>p>q>0. The entrepreneur earns private benefits B (EUR) in case (s)he develops version \"L\" and zero otherwise, regardless of the success or failure of the project. The entrepreneur also obtains payment w>0 if and only if the project which is developed is successful. Suppose the payment w equals the minimum amount such that the entrepreneur can credibly commit to choosing version \"H\" of the project in front of outside investors. What is the maximum expected payoff that the entrepreneur can offer to outside investors who finance the project entirely (in other terms: what is the maximum pledgeable income)? (Only one statement is true).",
+          "options": {
+            "a": "q[R-B/(p-q)]",
+            "b": "p[R-B/(p-q)]",
+            "c": "qR",
+            "d": "p(R-B/p)"
+          },
+          "answer": "b",
+          "solution": "If the (IC)-constraint is: p*w >= q*w + B, is satisfied, then it is in the interest of the entrepreneur to develop version H. This occurs if w >= B/(p-q). Fixing the minimum w that satisfies the IC-constraint (that is, the minimum w that allows the entrepreneur to credibly commit to undertake the H-version of the project, w=B/(p-q)), the pledgeable income equals p*(R-w) = p(R-B/(p-q))."
+        },
+        {
+          "question": "Suppose we are living in a Modigliani-Miller world with frictionless capital markets. Suppose news arrives announcing that the probability that the loans granted by bank A are going to default reduces. Before the news, such probability was strictly positive. Which of the following is true? (Only one statement is true).",
+          "options": {
+            "a": "The market value of assets of bank A is not affected by this news",
+            "b": "The market value of assets of bank A decreases upon this news",
+            "c": "The market value of equity of bank A decreases upon this news",
+            "d": "The market value of assets of bank A is likely to increase upon this news"
+          },
+          "answer": "d",
+          "solution": "In the MM-world, using the Market Value Balance Sheet, the loans granted by a bank are one of the bank assets. A decrease in the probability that loans default will increase the current market value of loans, hence it will increase the value of the bank's assets. Parallel to an increase in the current market value of assets we will also see an increase in the current market value of the bank's liabilities, i.e. debt and equity. This means that the value of bank equity most probably increases (also the market value of debt increases, but apart from very special cases, the increase in value of debt is always lower than the increase in the value of equity). For sure the value of equity cannot decrease (so c is false)."
+        },
+        {
+          "question": "Company A owns a toehold α = 30% in company T. The management of company A decides to launch a tender offer for an additional 20% of T's shares. The offer is conditional on A reaching exactly 50% of T's shares. There are 10 million shares of company T outstanding on the market. The current price of one T stock, before the offer is announced, equals 6.75 EUR. Every investor knows that, if the offer is successful, the value of one T stock will be 8 EUR. What is the maximum price p at which a tender offer is profitable for A? If you are one small shareholder of company T, would you agree to tender your share at this maximum price p?",
+          "options": {
+            "a": "p = 20; Yes, I would agree to tender my share at p = 20",
+            "b": "p = 26.75; Yes, I would agree to tender my share at p = 26.75",
+            "c": "p = 8; Yes, I would agree to tender my share at p = 8",
+            "d": "p = 12; No, I would not agree to tender my share at p = 12."
+          },
+          "answer": "a",
+          "solution": "Let's solve the exercise on a per-share basis (every formula is linear in the number of shares outstanding, 10mln, and therefore this information is irrelevant). A pays 0.2*p to acquire the remaining 20% of the shares, necessary to reach the 50% quota, given its initial toehold of 30%. As a benefit, post-takeover each share is valued 8 (and A owns 50% of shares). Therefore, A makes a profit if 0.2p < 0.5*8 = 4, i.e. p < (4/0.2) = 20. A small shareholder of T who knows that, if the Tender offer is successful and T is acquired by A, its share value will be equal to 8 EUR, so (s)he will not tender if p < 8. But p=20, so (s)he accepts the offer and tender his/her share."
+        },
+        {
+          "question": "All other things being equal, firms with high growth opportunities operating in countries with low corporate tax rates should:",
+          "options": {
+            "a": "be indifferent between retaining cash and paying it out",
+            "b": "pay out cash rather than retain it",
+            "c": "retain cash rather than pay it out",
+            "d": "invest in all projects available to the firm"
+          },
+          "answer": "c",
+          "solution": "One of the benefits of retaining cash is to be able to finance growth opportunities, while one of its costs is to have to pay corporate taxes (on retained earnings, for example). Therefore, if there are high growth opportunities and low corporate taxes, shareholders are better off if cash is retained, all other things being equal."
+        },
+        {
+          "question": "There are two riskless, zero-coupon bonds currently traded on the financial markets. One is a bond issued by a non-environmental friendly company, OIL Co., and the other one is a green bond issued by an environmentally friendly company, HYDRO Co. The face value of the two bonds equals 5000 $ and both bonds have maturity of 10 years. The risk-free interest rate currently is equal to r = 4%. Both bonds are riskless. There are two kinds of investors in the bond market. One type is purely financial investors, who only look at the financial performance of their investment when choosing in which bond to invest. The second type is environmental-engaged (\"green\") investors, who are willing to earn a 1% lower return to invest in an environmental-friendly security. Assume that there are enough financial investors to buy all the OIL bonds, and enough green investors to buy all the HYDRO bonds. What is the difference in the price of the two bonds, assuming that financial investors are willing to buy both bonds, while green investors do not buy OIL bonds? (the result is approximated at one decimal point)",
+          "options": {
+            "a": "The OIL bond costs 342.6$ more than the HYDRO bond.",
+            "b": "The OIL bond costs 146.5$ less than the HYDRO bond",
+            "c": "The OIL bond costs 342.6$ less than the HYDRO bond",
+            "d": "The OIL bond costs 146.5$ more than the HYDRO bond"
+          },
+          "answer": "c",
+          "solution": "A purely financial investor wants to earn at least a 4% return on the investment, which is the rate of return that can be earned on an alternative, risk-free security. Therefore, a financial investor is willing to buy any bond (so, both OIL and HYDRO bonds), as long as the bond provides a return of 4%. If there are enough financial investors to buy all the OIL bonds, then the price of OIL is: P_OIL = 5000 / (1.04)^10 = 3377.8 $. A green investor is willing to give up a 1% return on the HYDRO bond, and would never buy an OIL bond. Therefore, (s)he wants to earn at least a 3% return on the HYDRO bond, and buys only HYDRO bonds. Financial investors would never buy the HYDRO bond if this gives only a return of 3%, lower than the 4% they earn on the OIL bond. If there are enough “green” investors to buy all the HYDRO bonds, then its price is: P_HYDRO = 5000 / (1.03)^10 = 3720.5 $. The HYDRO bond costs 342.6$ more than the OIL bond."
+        },
+        {
+          "question": "An acquirer and a target (A and T, respectively) are bargaining one-to-one for the synergy they can create after they merge. They estimate that this synergy has a value of 80 mln EUR. Acquirer A has the option to negotiate another acquisition with a different firm, S. From the possible acquisition of S, A believes it can earn 50 mln EUR. Instead, T thinks that by staying independent it can earn 50 mln EUR if it undertakes another project, which would be impossible if T is acquired by A. Do you think that A and T can reach an agreement in their one-to-one negotiation? If they do, who do you expect to get the highest quota of the synergy, A or T?",
+          "options": {
+            "a": "No, A and T cannot reach an agreement in a one-to-one negotiation",
+            "b": "Yes, A and T can reach an agreement and A gets the highest quota of the synergy",
+            "c": "Yes, A and T can reach an agreement and T gets the highest quota of the synergy",
+            "d": "Yes, A and T can reach an agreement and they will get for sure half of the synergy each."
+          },
+          "answer": "a",
+          "solution": "This is because in any one-to-one negotiation, each firm wants to obtain at least its outside option. This is worth 50 mln for A (acquiring S), and also 50 mln for T (undertaking another project). Therefore, 50+50=100 > 80, and A and T cannot agree to split the synergy of 80."
+        },
+        {
+          "question": "According to prospect theory, in a decision problem under uncertainty the framing of outcomes matters. Which of the following statements is true? (Only one statement is true)",
+          "options": {
+            "a": "Outcomes are perceived as positive or negative relative to a reference point. The reference point is always defined by the personal utility function",
+            "b": "Outcomes are perceived as absolute gains from the status quo situation",
+            "c": "Outcomes are perceived as absolute losses from the status quo situation",
+            "d": "Outcomes are perceived as positive or negative relative to a reference point. The reference point can be related to the status quo situation of the decisor"
+          },
+          "answer": "d",
+          "solution": "In prospect theory, outcomes are perceived as gains or losses relative to a reference point, which can be the status quo. The utility function is not used to define the reference point, and outcomes are not perceived as absolute gains or losses."
+        },
+        {
+          "question": "On February 1st, 2024, the closing price of a stock is 16.22 EUR. On the same day, a call option on this stock with a strike price of K = 17 EUR and an exercise date after 90 days costs 0.14 EUR. On the market also a put option with the same strike price and the same exercise date as the call is traded. Assume a continuously compounded risk-free rate of 4.00% per year. Consider the year made of 360 days. Further, assume that both options are European and that the stock does not pay dividends in the next 90 days. If the put-call parity holds, the price of the put option on February 1st is closest to:",
+          "options": {
+            "a": "0.11 EUR",
+            "b": "0.75 EUR",
+            "c": "1.05 EUR",
+            "d": "1.35 EUR"
+          },
+          "answer": "b",
+          "solution": "Recall the put-call parity: C = S + P – PV(K) and therefore P = C + PV(K) – S. S = stock price, P = put price, C = call price, and PV is the present value of the strike K, when discounted at the risk-free yearly rate of 4% for the 90 days left to the expiration of the options. Therefore, PV(K) = 17/(1.04^(90/360)) = 16.83413 and P = 0.14 + 16.83413 - 16.22 = 0.754127EUR, closest to 0.75 EUR."
+        },
+        {
+          "question": "The gross value of a project without considering its flexibility is the following. Currently (t = 0) its value is 300 million EUR, while in one year (t=1) it can be 350M EUR, if the market expands, or 270M EUR, if the market contracts. If you invest in the project at t=0, it costs you 300M EUR. However, you have the option to wait for one year and invest in the project at t=1. If you wait and invest at t=1 you do not earn any cash-flow at t=0, and the cost of the project becomes 310M EUR. You are risk-neutral, and the risk-free interest rate is equal to zero. The value at t=0 of the option to wait and invest in the project at t=1 is closest to:",
+          "options": {
+            "a": "15 M EUR",
+            "b": "11 M EUR",
+            "c": "7 M EUR",
+            "d": "5 M EUR"
+          },
+          "answer": "a",
+          "solution": "The option to wait and to invest in one year is equivalent to a financial call option that expires at t=1, with K = 310 (in M EUR) (= the cost of the project if you invest in one year). At t=1 the underlying project may be worth 350, and in that case the option to invest will be in-the-money and you will exercise it; or it might be valued 270 EUR (in this case, the option to invest will be out-of-the-money, and you will not invest). Given that the problem does not give you the probabilities of these two events, you need to find the value of the (call) option to wait with the replicating portfolio method. Let the replicating portfolio be (D, B): by buying D units of the project and B riskless bonds (that pay a zero interest rate) today, you can replicate the payoffs of the call in any t=1 contingency. The replication portfolio is such that: 350D + B = (350-310) = 40; 270D + B = 0. And the solution is D = 0.5 and B = -135. The value of the (call) option to wait and invest next year equals the value of this portfolio today: 0.5(300) – 135 = 15 M EUR, where at t=0 as underlying value we use the (gross) project value, without flexibility (i.e. 300)."
+        },
+        {
+          "question": "You buy today 500 European put options on NHH stock. The options expire in exactly 30 days, and their strike price is 21 EUR. Each option today costs 1.53 EUR. Assume you chose to finance the purchase of the 500 options by borrowing the entire amount at 5% interest per year. What is the price of the NHH stock at the expiration date such that you earn exactly a zero profit on this operation, considering that at their expiration date you also reimburse the loan used to purchase the options? (Consider that the year is composed of 365 days).",
+          "options": {
+            "a": "18.94 EUR",
+            "b": "19.46 EUR",
+            "c": "20.67 EUR",
+            "d": "21.32 EUR"
+          },
+          "answer": "b",
+          "solution": "Solving in S the equation: 500 * (21 – S) – (1.53 * 500)(1.05)^(30/360) = 0 gives S = 19.46377 approximated to 19.46."
+        }
+      ]
+    },
+    {
+      "date": "February 14th, 2025",
+      "questions": [
+        {
+          "question": "How would you define the \"Premium for Good Governance\" in a given country? (only one statement is true):",
+          "options": {
+            "a": "The additional return investors require on average to invest in stocks of companies established in that country",
+            "b": "The cost of equity capital paid on average by companies established in that country",
+            "c": "The additional price investors are willing to pay on average for stocks of companies established in that country if they were sure that the country corporate governance system was effective to prevent expropriation of shareholders' value",
+            "d": "The cost of equity capital that companies established in that country pay on average given the quality of their corporate governance system"
+          },
+          "answer": "c",
+          "solution": "The premium for good governance is an additional price paid on stocks of the given country (on average), not a return earned by investors (so a is wrong). Given that the price is related to the cost of equity (higher stock price paid by investors implies lower cost of equity for the firm), we cannot exclude b and d. However, both b and d do not refer to a better governance system, which is the key to explain the premium for good governance. The only answer referring explicitly to this is c."
+        },
+        {
+          "question": "Company ACQ owns a toehold of 10% of shares in company TARG. ACQ wants to take control of TARG and therefore launches a tender offer to reach exactly 50% of TARG equity. The current stock price of TARG is 30 EUR. ACQ knows that once it takes control of TARG, the TARG' stock price will increase to 36 EUR. The tender offer has direct costs, which are estimated to be equivalent to 2 EUR per share acquired by ACQ. What is the maximum price p at which a successful tender offer is profitable for ACQ?",
+          "options": {
+            "a": "p = 32 EUR",
+            "b": "p = 40 EUR",
+            "c": "p = 44 EUR",
+            "d": "p = 52 EUR"
+          },
+          "answer": "b",
+          "solution": "ACQ already owns 10% of TARG shares, so it needs to buy 40% of TARG shares through the tender offer to take control. The cost of a successful tender offer, i.e. a tender offer that gives exactly 50% of TARG shares to ACQ (computed per share) then is equal to (0.5-0.1)p plus the direct cost of 2 EUR. After taking control of TARG, ACQ owns 50% of ACQ shares, which are valued at 36 EUR. Therefore, the profit for ACQ to make a successful tender offer equals 0.5(36) – (0.5 – 0.1)p – 2. The maximum p at which this offer is profitable is the p that makes such profit equal to zero, i.e. the solution of 0.5(36) – (0.5 – 0.1)p – 2 = 0 that gives p = 40."
+        },
+        {
+          "question": "When company insiders (e.g. managers) know more than investors operating on the market about the future firm cash-flows we say that information is asymmetric. Investors value the perceived future firm cash-flows when assessing the firm value. If firm managers' financial decisions change these perceptions, then these decisions also affect the market value of the firm. How does this exactly work? (only one statement is correct)",
+          "options": {
+            "a": "If the managers' financial decisions signal (unexpected) bad news about the future firm cash-flows, then investors buy bonds of the company on the market, and this in turn increases the bond price and the market value of the firm's debt",
+            "b": "If the managers' financial decisions signal (unexpected) bad news about the future firm cash-flows, then investors buy shares of the company on the market, and this in turn increases the stock price and the market value of the firm's equity",
+            "c": "If the managers' financial decisions signal (unexpected) good news about the future firm cash-flows, then investors keep the company shares in their portfolio",
+            "d": "If the managers' financial decisions signal (unexpected) good news about the future firm cash-flows, then investors buy shares of the company on the market, and this in turn increases the stock price and the market value of the firm's equity"
+          },
+          "answer": "d",
+          "solution": "Bad news obviously lead to selling company securities, both shares and bonds. Good news trigger new purchase of shares, and not simply to induce investors to keep the company shares in their portfolio in order to affect the market value of the firm."
+        },
+        {
+          "question": "Suppose the financial market satisfies all the assumptions of Modigliani-Miller paradigm. EQUI Corporation holds 20 million EUR cash and has debt with current market value of 20 million EUR (the debt is safe). EQUI assets-in-place are predicted to generate cash-flows of 12 mln EUR per year, starting from next year, forever. Currently, there are 10 million of EQUI shares outstanding, and EQUI's cost of capital is 12%. The company wants to entirely use its cash to repurchase shares on the open market. Which of the following statements is correct? (only one statement is true)",
+          "options": {
+            "a": "The market value of equity of EQUI before the share repurchase is 100 mln EUR and its share price is 10 EUR. After having repurchased the shares, the market value of equity is 80 mln EUR and its share price is 10 EUR",
+            "b": "The total market value of EQUI before the share repurchase is 100 mln EUR and its share price is 10 EUR. After having repurchased the shares, the market value of equity is 100 mln EUR and its share price is 10 EUR",
+            "c": "The total market value of EQUI before the share repurchase is 120 mln EUR and its share price is 12 EUR. After having repurchased the shares, the market value of equity is 100 mln EUR and its share price is 10 EUR",
+            "d": "The total market value of EQUI before the share repurchase is 100 mln EUR and its share price is 12 EUR. After having repurchased the shares, the market value of equity is still 100 mln EUR and its share price is 12 EUR"
+          },
+          "answer": "a",
+          "solution": "The market value of EQUI is the sum of the PV of its future cash-flows, a perpetuity of C=12 mln per year discounted at the cost of capital r =12% (i.e. 12 mln / 0.12 = 100 mln), plus the cash of 20 mln EUR: therefore, total market value of EQUI is 120 mln EUR. Given that the market value of EQUI debt is 20 mln EUR, the market value of EQUI’ equity is 100 mln EUR. C is wrong. The stock price is 100 mln EUR / 10 mln = 10 EUR. The company uses the 20 mln cash to repurchase equity. Given that the stock price is 10 EUR, it can buy 2 mln shares. There are then only 8 mln shares left outstanding after the repurchase. The total value of EQUI assets is 100 mln because 20 mln cash have been spent. Therefore, the value of equity after the repurchase is 100 mln – 20 mln (debt) = 80 mln EUR. The share price after the repurchase is then 80 mln EUR / 8 mln = 10 EUR (as expected, given that share repurchases do not change the stock price in the MM world)."
+        },
+        {
+          "question": "While you are trading stock options, you notice an arbitrage opportunity. The current stock price of one share is 12 USD, and the one-year risk-free interest rate is 2.5%. A one-year call on the share with a strike price of 13 USD currently trades at 1.52 USD, while a one-year put on the same share also with strike price of 13 USD currently trades at 1.85 USD. How do you exploit this arbitrage opportunity?",
+          "options": {
+            "a": "You buy the call, buy the put, sell the share and invest the present value of the strike price at 2.5% interest rate",
+            "b": "You buy the call, sell the put, buy the share and borrow the present value of the strike price at 2.5% interest rate",
+            "c": "You buy the call, sell the put, sell the share and borrow the present value of the strike price in a safe account at 2.5% interest rate",
+            "d": "You sell the call, buy the put, buy the share and borrow the present value of the strike price at 2.5% interest rate"
+          },
+          "answer": "d",
+          "solution": "Use the put-call parity to find the no-arbitrage price of the Call: C = P + S - PV(K) = 1.85 + 12 – (13/1.025) = 1.167 USD. The current price of the call is 1.52 USD > 1.167 USD so that the call is overpriced now. You sell the call for sure, so a, b and c are wrong."
+        },
+        {
+          "question": "Two European put options with a strike price of 82 EUR are written on two different stocks. Both put options expire exactly in three months (= one quarter of the year). Suppose that at the options' expiration date one stock (the low-volatility one) will be worth either 78 EUR (with probability 60%) or 85 EUR (with probability 40%). The other stock (the high-volatility one) will be worth either 70 EUR (with probability 60%) or 90 EUR (with probability 40%). Assume that investors on the financial markets are risk-neutral and that the risk-free interest rate is 3% per year. The prices of the two put options today are closest to:",
+          "options": {
+            "a": "Price of the option on the low-volatility stock: 2.45 EUR; the price of the option on the high-volatility stock: 7.25 EUR",
+            "b": "Price of the option on the low-volatility stock: 2.01 EUR; the price of the option on the high-volatility stock: 7.02 EUR",
+            "c": "Price of the option on the low-volatility stock: 2.38 EUR; the price of the option on the high-volatility stock: 7.15 EUR",
+            "d": "Price of the option on the low-volatility stock: 2.72 EUR; the price of the option on the high-volatility stock: 7.98 EUR"
+          },
+          "answer": "c",
+          "solution": "Given that investors are risk-neutral, the price of each put option is the PV of its expected payoff at expiration, where we use 3% per-year interest rate as discount. First, compute the risk-free interest rate over 3 months (= ¼ of the year), that we denote with r. Solving in r the following equation: 1+3% = (1+r)^4. Gives r =0.0074. Then we discount the expected payoffs of the options using 1.0074 as discount rate. Compute the expected payoffs of the two options: for the Put on low-vol. stock = 0.6*(82-78) = 2.4 EUR, for the Put on high-vol. stock = 0.6*(82-70) = 7.2 EUR. Discounting the two expected payoffs one obtains 2.4/1.0074 = 2.38 for the low-vol and 7.2/1.0074 = 7.15 EUR for the high-vol."
+        },
+        {
+          "question": "Which of the following ones is the most precise definition of risk-neutral probability?",
+          "options": {
+            "a": "The probability distribution over the future possible events such that the current price of a financial security observed on the market is the same as if only risk-neutral investors were trading it",
+            "b": "The probability distribution over the future possible events that can be obtained by aggregating individual investors' historical probability distributions",
+            "c": "The probability distribution over the future possible events that can be obtained if the financial security is risk-free",
+            "d": "The probability distribution over the future possible events that represents the historical probability used by risk-neutral investors operating on the market, when not all investors are risk-neutral"
+          },
+          "answer": "a",
+          "solution": "B represents the historical probability. If a financial security is risk-free then by definition its future payoffs are known with certainty, so the probability distribution defined on them is degenerate (=1 on the known payoff). D describes an aggregated historical probability defined only on risk-neutral investors, which does not represent anything in particular."
+        },
+        {
+          "question": "Which of the following ones is the most precise definition of merger spread?",
+          "options": {
+            "a": "The difference between the price publicly offered for one share of the target company and its market price right before the offer has been publicly announced",
+            "b": "The difference between the market price of one share of the target company right after a public offer has been publicly announced and its market price right before the offer has been publicly announced",
+            "c": "The difference between the share price actually paid to acquire a target company and the market price of the share before the offer has been announced",
+            "d": "The difference between the price publicly offered for one share of the target company and the market price of this share right after the offer has been announced"
+          },
+          "answer": "d",
+          "solution": "The Merger Spread does not consider the price of the target share before the announcement of a public offer has been made, so a and b are wrong. C is also wrong because at the moment of the public announcement the takeover price, that is the price that will be actually paid for a share of the target company, is still not known for sure."
+        },
+        {
+          "question": "Denote with: S = the current price of one stock of a given company; r = the (one-year) company weighted average cost of capital; rf = the (one-year) risk-free interest rate on the market, with r > rf. The stock price in exactly one year is not known at this moment and can be either U > S (with \"historical\" probability q) or D < S (with “historical” probability 1-q), where 0<q<1. Denote with (rho, 1-rho) the risk-neutral probability defined on these two events, that is rho = probability that the price in one year equals U, and 1-rho = probability that the price in one year equals D, under the assumption that all investors operating on the market were risk-neutral. Which of the following is correct? (only one choice is correct)",
+          "options": {
+            "a": "S = (q*U+(1-q)*D)/(1+rf)",
+            "b": "S = (rho*U+(1-rho)*D)/(1+rf)",
+            "c": "S = (q*U+(1-q)*D)/r",
+            "d": "S = (rho*U+(1-rho)*D)/(1+r)"
+          },
+          "answer": "b",
+          "solution": "The current stock price S equals the PV of the expected value of the share. Everything refers to one year ahead, so we discount the expected value by using the weighted average cost of capital when we use the historical probability to obtain the expected value of the share, and the risk-free rate when we use the risk-neutral probability to compute the expected value of the share. A is wrong because it uses the historical probabilities (q,1-q) over the distribution (U,D) to compute the expected value of the share and discounts it by using the risk-free rate rf to compute the current stock price. C is wrong because it does not discount by 1+r, but only r, and considers then a perpetuity paying the expected value q*U+(1-q)*D every year, forever. D is wrong because it uses the risk-neutral probability (rho, 1-rho) to compute the expected value of the share, but discounts it by using r and not rf."
+        },
+        {
+          "question": "Which of the following statements about the \"Asset Substitution\" effect is true? (only one statement is true)",
+          "options": {
+            "a": "It gives managers acting in the interests of shareholders the incentive to invest in projects with low-risk",
+            "b": "It gives managers acting in the interests of shareholders the incentive to invest in projects with positive NPV",
+            "c": "It gives managers acting in the interests of shareholders the incentive to invest in high-risk projects instead of investing in low-risk ones, even if the former are inefficient",
+            "d": "It gives managers acting in their own interest the incentive to overinvest"
+          },
+          "answer": "c",
+          "solution": "Asset substitution refers to the incentive to replace low-risk projects with high-risk ones, even when this would not be beneficial for shareholders. It is the opposite of what is stated in a, it is not related to the positive NPV of the projects (so b is wrong) nor to overinvestment, i.e. the tendency to undertake negative NPV projects (so d is wrong). Indeed, asset substitution could lead managers to prefer high-risk projects to low-risk ones, while both types of projects are efficient (i.e. have positive NPV), but the low-risk ones are better than the high-risk ones."
+        },
+        {
+          "question": "Your firm can produce a new commodity. If produced, the new commodity will generate certain profits of 1 mln EUR per year for 5 years, starting next year, and after that competition will drive profits down to zero. The cost of this new project today is 2 mln EUR. The yield on a 5-year risk-free annuity currently available on the financial markets is 7% per year, and the risk-free interest rate currently is 2.5%. Suppose that you have the option to wait for one year so that you can start producing the new commodity next year. Which of the following statements is true? (only one statement gives you the right answer)",
+          "options": {
+            "a": "The NPV of producing the new commodity today is positive.",
+            "b": "The NPV of producing the new commodity today is positive. The value of the option to wait for one year and to start producing next year might be positive if you expect interest rates on the market to increase",
+            "c": "The NPV of producing the new commodity today is negative",
+            "d": "The NPV of producing the new commodity today is negative. The value of the option to wait for one year and to start producing next year might be positive if you expect interest rates on the market to increase"
+          },
+          "answer": "a",
+          "solution": "Compute the NPV of starting the production today, as the PV of the future cash-flows generated by the new commodity, minus the investment cost: NPV = (1/0.07)*(1-1/(1.07^5))-2 = 2.1 mln EUR. The value of the option to wait is negative for sure if interest rates increase, because in that case the PV of cash-flows will reduce (while the investment cost stays the same), so b and d are both wrong."
+        }
+      ]
+    }
+  ]
+}
