@@ -236,9 +236,13 @@ def main():
 
         selected_exam_date = st.selectbox("Select an Exam", exam_dates, index=exam_dates.index(st.session_state.exam_date) if st.session_state.exam_date in exam_dates else 0)
 
+        # BUG FIX: This is the corrected logic block
         if selected_exam_date != st.session_state.exam_date:
             st.session_state.exam_date = selected_exam_date
-            reset_quiz_state()
+            # Reset only the progress for the new exam, not the whole state
+            st.session_state.question_index = 0
+            st.session_state.score = 0
+            st.session_state.user_answers = {}
             st.rerun()
             
         if not st.session_state.quiz_started:
