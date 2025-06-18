@@ -57,7 +57,7 @@ def reset_quiz_state(full_reset=False):
     
     Args:
         full_reset (bool): If True, resets the entire application state including
-                           mode and solution preferences.
+                           mode.
     """
     st.session_state.question_index = 0
     st.session_state.score = 0
@@ -68,49 +68,14 @@ def reset_quiz_state(full_reset=False):
 
     if full_reset:
         st.session_state.mode = "Exam Quiz"
-        st.session_state.show_solution_preference = "Instantly"
-
-def display_instant_feedback(exam, current_q_index):
-    """
-    Displays feedback for the previously answered question if the preference is "Instantly".
-    This is called at the top of the question display function.
-    """
-    if st.session_state.show_solution_preference != "Instantly":
-        return  # Do nothing if preference is not set to "Instantly"
-
-    # We want to show feedback for the *previous* question index
-    prev_q_index = current_q_index - 1
-
-    # Check if there was a previous question and if it has been answered
-    if prev_q_index >= 0 and prev_q_index in st.session_state.user_answers:
-        questions = exam.get("questions", [])
-        prev_question = questions[prev_q_index]
-        user_ans_key = st.session_state.user_answers[prev_q_index]
-        is_correct = user_ans_key == prev_question.get("answer", "").lower()
-        
-        # Display the feedback in a container
-        with st.container():
-            st.markdown("---")
-            st.write(f"**Result for Question {prev_q_index + 1}:**")
-            if is_correct:
-                st.success("Your answer was correct!")
-            else:
-                st.error(f"Your answer was incorrect. The correct answer was: **{prev_question.get('answer', 'N/A').upper()}**")
-            with st.expander("View Explanation"):
-                st.info(prev_question.get("solution", "No solution provided."))
-            st.markdown("---")
-
 
 def display_exam_question(exam):
     """
     Displays the current question for the selected exam, handles user input,
-    and manages navigation between questions.
+    and manages navigation between questions. In this mode, feedback is deferred until the end.
     """
     questions = exam.get("questions", [])
     q_index = st.session_state.question_index
-
-    # Bug fix: Display feedback for the previous question at the top of the page.
-    display_instant_feedback(exam, q_index)
 
     if q_index < len(questions):
         question = questions[q_index]
@@ -133,44 +98,51 @@ def display_exam_question(exam):
                     is_correct = selected_key == question.get("answer", "").lower()
                     if is_correct:
                         st.session_state.score += 1
-
-                    # Bug fix: Removed the feedback display from here.
                     
-                    # Increment index and rerun to show the next question (and feedback for this one)
+                    # Increment index and rerun to show the next question
                     st.session_state.question_index += 1
                     st.rerun()
     else:
+        # Once all questions are answered, show the final review
         show_final_score_and_review(exam)
 
 def show_final_score_and_review(exam):
     """
     Displays the final score and provides a comprehensive review of all answers
-    at the end of an exam.
+    at the end of an exam, including the options for each question.
     """
     questions = exam.get("questions", [])
     st.header(f"Quiz Finished! Your Score: {st.session_state.score}/{len(questions)}")
 
-    # This logic correctly shows the full review only if the user chose "At the end"
-    if st.session_state.show_solution_preference == "At the end":
-        st.subheader("Review Your Answers")
-        for i, q in enumerate(questions):
-            user_ans_key = st.session_state.user_answers.get(i)
-            correct_ans_key = q.get("answer", "").lower()
+    st.subheader("Review Your Answers")
+    for i, q in enumerate(questions):
+        user_ans_key = st.session_state.user_answers.get(i)
+        correct_ans_key = q.get("answer", "").lower()
+        options_dict = q.get("options", {})
+        
+        with st.container(border=True):
+            # Display Question
+            st.markdown(f"**Question {i+1}:** {q.get('question', '')}")
+            st.markdown("---")
             
-            with st.container(border=True):
-                st.markdown(f"**Question {i+1}:** {q.get('question', '')}")
-                
-                if user_ans_key == correct_ans_key:
-                    st.success(f"Your answer: {user_ans_key.upper()}. Correct!")
-                else:
-                    st.error(f"Your answer: {user_ans_key.upper() if user_ans_key else 'Not answered'}. Correct answer: {correct_ans_key.upper()}.")
-                
-                with st.expander("See explanation"):
-                    st.info(q.get("solution", "No solution provided."))
+            # Display Options
+            st.write("**Options:**")
+            for key, value in options_dict.items():
+                st.markdown(f"- **{key.upper()}:** {value}")
+            st.markdown("---")
+
+            # Display Result and Explanation
+            if user_ans_key == correct_ans_key:
+                st.success(f"Your answer: **{user_ans_key.upper()}**. Correct!")
+            else:
+                st.error(f"Your answer: **{user_ans_key.upper() if user_ans_key else 'Not answered'}**. Correct answer: **{correct_ans_key.upper()}**.")
+            
+            with st.expander("View Explanation"):
+                st.info(q.get("solution", "No solution provided."))
 
 def display_random_question(all_questions):
     """
-    Selects and displays a random question from the entire pool of questions.
+    Selects and displays a random question. Solution is always shown instantly.
     """
     st.header("Random Question Mode")
     
@@ -179,8 +151,9 @@ def display_random_question(all_questions):
         # Button to fetch a new question
         if st.button("Get New Random Question", use_container_width=True):
             st.session_state.current_random_question = random.choice(all_questions)
-            if 'random_answer' in st.session_state:
-                del st.session_state['random_answer']
+            # Clear previous answer state
+            if 'random_answer_submitted' in st.session_state:
+                del st.session_state['random_answer_submitted']
             st.rerun()
     
     # Initialize with a question if none is selected
@@ -199,13 +172,20 @@ def display_random_question(all_questions):
                 submitted = st.form_submit_button("Submit")
 
                 if submitted:
-                    selected_key = user_answer.split(')')[0].lower()
-                    if selected_key == question.get("answer", "").lower():
-                        st.success("Correct!")
-                    else:
-                        st.error(f"Incorrect. The correct answer is {question.get('answer', 'N/A').upper()}.")
-                    with st.expander("See explanation"):
-                        st.info(question.get("solution", "No solution provided."))
+                    st.session_state.random_answer_submitted = True
+                    st.session_state.last_random_answer = user_answer
+
+            # Display feedback if an answer has been submitted
+            if st.session_state.get('random_answer_submitted'):
+                last_answer = st.session_state.get('last_random_answer', '')
+                selected_key = last_answer.split(')')[0].lower()
+                if selected_key == question.get("answer", "").lower():
+                    st.success("Correct!")
+                else:
+                    st.error(f"Incorrect. The correct answer is {question.get('answer', 'N/A').upper()}.")
+                with st.expander("View Explanation", expanded=True):
+                    st.info(question.get("solution", "No solution provided."))
+
 
 def main():
     """
@@ -238,11 +218,6 @@ def main():
         if mode != st.session_state.mode:
             st.session_state.mode = mode
             reset_quiz_state()
-            st.rerun()
-
-        show_solution_preference = st.radio("Show Solution", ["Instantly", "At the end"], key="solution_pref")
-        if show_solution_preference != st.session_state.show_solution_preference:
-            st.session_state.show_solution_preference = show_solution_preference
             st.rerun()
         
         st.divider()
