@@ -1,0 +1,559 @@
+{
+  "exams": [
+    {
+      "date": "Super Quiz",
+      "questions": [
+        {
+          "question": "In a perfect Modigliani-Miller world without corporate taxes, if a firm increases its debt-to-equity ratio, its Weighted Average Cost of Capital (WACC) will:",
+          "options": {
+            "a": "Increase.",
+            "b": "Decrease.",
+            "c": "Remain unchanged.",
+            "d": "Become equal to the cost of debt."
+          },
+          "answer": "c",
+          "solution": "According to MM Proposition II without taxes, in a frictionless market, the WACC remains constant regardless of the capital structure."
+        },
+        {
+          "question": "According to Modigliani-Miller Proposition I with corporate taxes, the market value of a levered firm ($V_L$) is equal to the market value of an identical unlevered firm ($V_U$) plus:",
+          "options": {
+            "a": "The present value of bankruptcy costs.",
+            "b": "The present value of the interest tax shield ($D \\times T_c$).",
+            "c": "The value of its equity ($E_L$).",
+            "d": "The expected future cash flows from debt ($D \\times (1-T_c)$)."
+          },
+          "answer": "b",
+          "solution": "Corporate taxes make debt advantageous because interest payments are tax-deductible, creating a \"tax shield\" that adds value to the levered firm."
+        },
+        {
+          "question": "In a Modigliani-Miller world (without taxes), a company's stock price after an open market share repurchase has no effect on the stock price per share. This resulting price is equivalent to what if a cash dividend were paid instead?",
+          "options": {
+            "a": "The stock's price immediately before the dividend (cum-dividend price).",
+            "b": "The stock's price after the dividend has been paid (ex-dividend price).",
+            "c": "The stock's original IPO issue price.",
+            "d": "The stock's book value."
+          },
+          "answer": "a",
+          "solution": "According to the specific course material we discussed (Slide 39), a share repurchase leaves the stock price unchanged from its pre-distribution level (which is the cum-dividend price, as per Slide 35)."
+        },
+        {
+          "question": "A firm has operating assets-in-place with a market value of €180 million. It also holds €50 million in cash. The firm has debt with a market value of €70 million. What is the current total market value of the firm?",
+          "options": {
+            "a": "€110 million",
+            "b": "€160 million",
+            "c": "€230 million",
+            "d": "€300 million"
+          },
+          "answer": "c",
+          "solution": "The total market value of the firm is the sum of its operating assets and its cash holdings: €180M (assets-in-place) + €50M (cash) = €230M. Debt is a claim on these assets and doesn't directly add to the firm's total value in this sum."
+        },
+        {
+          "question": "In a frictionless Modigliani-Miller market, if you observe $V_U > V_L$ (where $V_U$ is the value of an unlevered firm and $V_L$ is the value of an otherwise identical levered firm), which arbitrage action would you take?",
+          "options": {
+            "a": "Sell shares of the unlevered firm and buy shares and bonds of the levered firm.",
+            "b": "Buy shares of the unlevered firm and sell shares and bonds of the levered firm.",
+            "c": "Buy shares of the levered firm and sell shares of the unlevered firm.",
+            "d": "Sell shares of the levered firm and buy shares of the unlevered firm."
+          },
+          "answer": "a",
+          "solution": "To exploit $V_U > V_L$ (unlevered firm is overpriced), you sell the overpriced asset (shares of U) and synthetically buy the underpriced asset (shares and bonds of L)."
+        },
+        {
+          "question": "Which of the following is the most accurate definition of Net Present Value (NPV)?",
+          "options": {
+            "a": "The total future value of all cash flows minus the initial investment.",
+            "b": "The current market value of all assets minus the current market value of all liabilities.",
+            "c": "The present value of all future cash flows minus the initial investment cost.",
+            "d": "The discount rate that makes the project's present value equal to its cost."
+          },
+          "answer": "c",
+          "solution": "NPV is the value added to the firm from a project, calculated by discounting all future cash flows to their present value and subtracting the initial investment."
+        },
+        {
+          "question": "For valuing a project that is guaranteed to generate **certain** cash flows in the future (i.e., no risk of default or variability), for a risk-neutral investor, the appropriate discount rate is typically:",
+          "options": {
+            "a": "The firm's Weighted Average Cost of Capital (WACC).",
+            "b": "The expected return on the market portfolio.",
+            "c": "The risk-free interest rate.",
+            "d": "The internal rate of return (IRR) of the project."
+          },
+          "answer": "c",
+          "solution": "With certain cash flows and risk-neutral investors, no risk premium is required; only compensation for the time value of money, which is the risk-free rate."
+        },
+        {
+          "question": "When valuing the expected future cash flows of a **risky** project for risk-averse investors, the appropriate discount rate used should:",
+          "options": {
+            "a": "Be equal to the risk-free rate, as risk is reflected in the cash flow projections.",
+            "b": "Include a risk premium above the risk-free rate to compensate for systematic risk.",
+            "c": "Be equal to the cost of debt, as debt is less risky than equity.",
+            "d": "Be higher if the project is financed with more equity, due to equity's higher risk."
+          },
+          "answer": "b",
+          "solution": "Risk-averse investors demand extra compensation (a risk premium) for bearing systematic risk. This premium is added to the risk-free rate to form the discount rate."
+        },
+        {
+          "question": "A firm has debt with a face value of €8M due in one year. The owner has limited liability. The firm considers two strategies:\n1.  **Strategy A:** Firm value in 1 year = €7M (certain).\n2.  **Strategy B:** Firm value in 1 year = €12M (prob 50%) or €4M (prob 50%).\nWhich strategy yields the owner a higher expected payoff?",
+          "options": {
+            "a": "Strategy A, with a payoff of €7M.",
+            "b": "Strategy B, with an expected payoff of €2M.",
+            "c": "Strategy A, with a payoff of €0.",
+            "d": "Strategy B, with an expected payoff of €1M."
+          },
+          "answer": "b",
+          "solution": "Owner's payoff (Strategy A): Max(7M - 8M, 0) = 0M.\nOwner's expected payoff (Strategy B): (0.50 * Max(12M - 8M, 0)) + (0.50 * Max(4M - 8M, 0)) = (0.50 * 4M) + (0.50 * 0M) = 2M.\nThe owner prefers Strategy B (2M) over Strategy A (0M)."
+        },
+        {
+          "question": "An agency problem primarily arises when:",
+          "options": {
+            "a": "Managers perfectly align their interests with shareholders.",
+            "b": "One party (agent) is supposed to act for another (principal), but has differing incentives.",
+            "c": "All information in the market is perfectly symmetric.",
+            "d": "Firms only use equity financing."
+          },
+          "answer": "b",
+          "solution": "The agency problem is a conflict of interest that occurs when one party (the agent) acts on behalf of another party (the principal) but has different motivations."
+        },
+        {
+          "question": "\"Debt overhang\" is an agency problem that can lead to:",
+          "options": {
+            "a": "Managers investing in too many positive NPV projects.",
+            "b": "Shareholders being unwilling to invest in positive NPV projects because a significant portion of the benefits accrues to existing debtholders.",
+            "c": "Firms issuing excessive amounts of equity to reduce financial risk.",
+            "d": "Debtholders gaining complete control of the firm's assets."
+          },
+          "answer": "b",
+          "solution": "In debt overhang, shareholders forgo valuable investments because their share of the project's returns is diminished by the prior claims of existing debtholders, particularly when the firm is in distress."
+        },
+        {
+          "question": "The \"free-rider problem\" in hostile takeovers occurs when:",
+          "options": {
+            "a": "Bidding firms offer a price significantly below the target's pre-announcement market price.",
+            "b": "Individual target shareholders choose not to tender their shares, hoping to benefit from the post-takeover value increase without selling their shares in the tender offer.",
+            "c": "Target management installs poison pills to prevent the takeover.",
+            "d": "Regulators impose high fees on takeover transactions."
+          },
+          "answer": "b",
+          "solution": "Shareholders may \"free-ride\" by refusing to sell their shares in a tender offer, hoping that enough other shareholders sell to make the takeover successful, so they can benefit from the higher stock price of the post-takeover firm without participating in the tender itself."
+        },
+        {
+          "question": "If an entrepreneur receives significant private benefits from a project version (L) that has a negative NPV for the firm, while another version (H) has a positive NPV and no private benefits, and the entrepreneur chooses Project L, this is an example of:",
+          "options": {
+            "a": "Optimal capital budgeting.",
+            "b": "Adverse selection.",
+            "c": "Management entrenchment.",
+            "d": "Expropriation through inefficient investment."
+          },
+          "answer": "d",
+          "solution": "The entrepreneur (agent) expropriates value from the outside investors (principals) by choosing a project that is inefficient for the firm but provides personal benefits."
+        },
+        {
+          "question": "The writer (seller) of a European put option has:",
+          "options": {
+            "a": "The right, but not the obligation, to sell the underlying asset.",
+            "b": "The obligation to buy the underlying asset at the strike price if the holder exercises.",
+            "c": "The right, but not the obligation, to buy the underlying asset.",
+            "d": "The right to collect dividends on the underlying stock."
+          },
+          "answer": "b",
+          "solution": "The put option writer receives the premium and in return, takes on the obligation to purchase the underlying asset if the option holder chooses to exercise their right to sell."
+        },
+        {
+          "question": "A company has the flexibility to increase the scale of a successful project in the future. This is an example of a real option most similar to a:",
+          "options": {
+            "a": "Call option.",
+            "b": "Put option.",
+            "c": "Swap.",
+            "d": "Futures contract."
+          },
+          "answer": "a",
+          "solution": "A call option gives the right to buy an asset in the future at a set price. The option to expand gives the right to \"buy\" (invest in) a larger scale of a project in the future."
+        },
+        {
+          "question": "Which of the following factors, if increased, generally leads to a higher value for a call option?",
+          "options": {
+            "a": "The strike price.",
+            "b": "The risk-free interest rate.",
+            "c": "The underlying asset's dividend yield.",
+            "d": "The time to expiration."
+          },
+          "answer": "d",
+          "solution": "A higher time to expiration increases the probability of favorable price movements, thus increasing the value of a call option (and also a put option)."
+        },
+        {
+          "question": "Which of the following expressions is a correct rearrangement of the Put-Call Parity ($C + PV(K) = P + S$)?",
+          "options": {
+            "a": "$C - P = S - PV(K)$",
+            "b": "$C - S = P + PV(K)$",
+            "c": "$C + S = P + PV(K)$",
+            "d": "$P - PV(K) = C + S$"
+          },
+          "answer": "a",
+          "solution": "By algebraically rearranging $C + PV(K) = P + S$, if you subtract P and PV(K) from the right side, you get $C - P = S - PV(K)$."
+        },
+        {
+          "question": "\"Underpricing\" in an Initial Public Offering (IPO) is best defined as:",
+          "options": {
+            "a": "The phenomenon where the final share price on the first trading day is lower than the issue price.",
+            "b": "The percentage by which the issue price is lower than the stock's closing price on its first trading day, calculated relative to the issue price.",
+            "c": "The percentage by which the issue price is lower than the stock's closing price on its first trading day, calculated relative to the closing price.",
+            "d": "The discount offered to institutional investors compared to retail investors."
+          },
+          "answer": "b",
+          "solution": "IPO underpricing measures the \"pop\" in the stock price from its issue price to its closing price on the first trading day, expressed as a percentage of the issue price."
+        },
+        {
+          "question": "When firm management, possessing superior information about the firm's true value and acting in the best interest of *existing* shareholders, they are incentivized to issue new equity when:",
+          "options": {
+            "a": "They believe the firm's shares are currently undervalued by the market.",
+            "b": "They believe the firm's shares are currently overvalued by the market.",
+            "c": "The firm's cost of debt is very high.",
+            "d": "The firm has exhausted all internal financing options."
+          },
+          "answer": "b",
+          "solution": "Issuing equity when shares are overpriced allows management to raise capital more cheaply for existing shareholders, as they effectively sell new shares for more than their true value."
+        },
+        {
+          "question": "Information asymmetry in financial markets implies that:",
+          "options": {
+            "a": "All market participants have access to the same information at the same time.",
+            "b": "One party in a transaction (e.g., management) has more or better information than the other party (e.g., outside investors).",
+            "c": "Market prices perfectly reflect all public and private information.",
+            "d": "Firms are always transparent about their future prospects."
+          },
+          "answer": "b",
+          "solution": "Information asymmetry refers to a situation where one party has more or better information than the other."
+        },
+        {
+          "question": "Company Alpha (Acquirer) already owns 10% of Company Beta, which has 10 million shares outstanding. Alpha wants to acquire an additional 40% of Beta's shares through a tender offer to gain control. The direct administrative costs for this tender offer amount to a **total of 2 million EUR**. If the tender offer is successful, Beta's shares are expected to be worth 36 EUR per share after the change in control. What is the maximum price per share Alpha can offer in the tender offer to break even?",
+          "options": {
+            "a": "38 EUR",
+            "b": "42 EUR",
+            "c": "44.5 EUR",
+            "d": "40 EUR"
+          },
+          "answer": "c",
+          "solution": "Shares to acquire = 0.40 * 10M = 4M shares.\nTotal ownership after tender = (0.10 + 0.40) * 10M = 5M shares.\nFuture value of Alpha's stake = 5M shares * 36 EUR/share = 180M EUR.\nFor break-even, Future Value of Stake = (Shares Acquired * P) + Total Admin Costs.\n180M = (4M * P) + 2M\n178M = 4M * P\nP = 178M / 4M = 44.5 EUR."
+        },
+        {
+          "question": "A company has 1 million shares outstanding trading at 15 EUR/share. It issues 500,000 new shares through an SEO at an issuing price of 12 EUR/share. The fees for the SEO are 0.5 million EUR. The net proceeds from the SEO will be invested in a project with an NPV of **2 million EUR**. What is the share price after the SEO?",
+          "options": {
+            "a": "14.50 EUR",
+            "b": "15.00 EUR",
+            "c": "15.50 EUR",
+            "d": "16.00 EUR"
+          },
+          "answer": "b",
+          "solution": "Old Equity Value = 1M sh * 15 EUR/sh = 15M EUR.\nGross Proceeds = 0.5M sh * 12 EUR/sh = 6M EUR.\nNet Proceeds = 6M - 0.5M (fees) = 5.5M EUR.\nNew Equity Value = Old Equity Value + Net Proceeds + NPV = 15M + 5.5M + 2M = 22.5M EUR.\nTotal Shares = 1M + 0.5M = 1.5M shares.\nNew Share Price = 22.5M / 1.5M = 15.00 EUR."
+        },
+        {
+          "question": "A firm can invest in a project that costs 10 million EUR today. In one year, the project's value will be either 15 million EUR (with a 60% probability) or 5 million EUR (with a 40% probability). All investors are risk-neutral, and the one-year risk-free interest rate is 5%. What is the Net Present Value (NPV) of this project today?",
+          "options": {
+            "a": "0.48 million EUR (approx.)",
+            "b": "0.50 million EUR",
+            "c": "1.00 million EUR",
+            "d": "1.50 million EUR"
+          },
+          "answer": "a",
+          "solution": "Expected future value = (0.6 * 15M) + (0.4 * 5M) = 9M + 2M = 11M EUR.\nPV of expected future value = 11M / (1 + 0.05) = 11M / 1.05 \\approx 10.47619M EUR.\nNPV = PV of expected future value - Cost = 10.47619M - 10M \\approx 0.47619M EUR, which is approx. 0.48M EUR."
+        },
+        {
+          "question": "The current stock price is 50 EUR. In one year, it will be either 62.5 EUR (up state) or 45 EUR (down state). The one-year risk-free interest rate is 4%. What is the risk-neutral probability of the stock price being 62.5 EUR in one year?",
+          "options": {
+            "a": "0.33",
+            "b": "0.40",
+            "c": "0.55",
+            "d": "0.60"
+          },
+          "answer": "b",
+          "solution": "Using risk-neutral valuation: $S_0 = (p \\times S_{up} + (1-p) \\times S_{down}) / (1 + r_f)$\n$50 = (p \\times 62.5 + (1-p) \\times 45) / (1 + 0.04)$\n$50 \\times 1.04 = 62.5p + 45 - 45p$\n$52 = 17.5p + 45$\n$7 = 17.5p$\n$p = 7 / 17.5 = 0.40$."
+        },
+        {
+          "question": "A firm's initial total market value of assets is 50 million EUR. It undertakes a new project costing 10 million EUR. This project has an NPV of 3 million EUR. What is the firm's total market value of assets *after* this project is undertaken?",
+          "options": {
+            "a": "53 million EUR",
+            "b": "57 million EUR",
+            "c": "60 million EUR",
+            "d": "63 million EUR"
+          },
+          "answer": "d",
+          "solution": "Initial total assets = 50M EUR.\nThe new project adds its cost plus its NPV to the firm's assets.\nValue added by new project = Cost + NPV = 10M + 3M = 13M EUR.\nTotal assets after project = Initial total assets + Value added by new project = 50M + 13M = 63M EUR."
+        },
+        {
+          "question": "Why is the risk-free rate used in the valuation of a project's future cash flows?",
+          "options": {
+            "a": "It compensates investors for bearing the project's systematic risk.",
+            "b": "It represents the project's internal rate of return.",
+            "c": "It is the base compensation for the time value of money when no risk is assumed.",
+            "d": "It reflects the firm's cost of capital when it has no debt."
+          },
+          "answer": "c",
+          "solution": "The risk-free rate is the minimum return required for tying up money over time, representing only the time value of money without any compensation for risk."
+        },
+        {
+          "question": "In a Modigliani-Miller world, debtholders can be viewed as the holders of 100% of the firm's assets who have then:",
+          "options": {
+            "a": "Bought a put option from shareholders.",
+            "b": "Sold a call option to shareholders, with the strike price being the debt's face value.",
+            "c": "Bought a call option from shareholders.",
+            "d": "Sold a put option to the firm itself."
+          },
+          "answer": "b",
+          "solution": "This conceptual view states that debtholders initially own the firm's assets but sell the upside potential beyond the debt's face value to equity holders via a call option."
+        },
+        {
+          "question": "The current stock price of Company Z is 8 EUR. The one-year risk-free rate is 1%. A one-year put on Company Z with a strike price of 6.50 EUR trades at 0.75 EUR, while a one-year call with the same strike price trades at 2 EUR. Assuming $PV(K) \\approx 6.4356$, you observe $C+PV(K) < P+S$. How would you exploit this arbitrage opportunity?",
+          "options": {
+            "a": "You sell the call, buy the put, and invest the present value of the strike price.",
+            "b": "You sell the call, buy the put, buy the share and borrow the present value of the strike price.",
+            "c": "You buy the call, sell the put, sell the share, and lend the present value of the strike price.",
+            "d": "You buy the call, sell the put, buy the share, and borrow the present value of the strike price."
+          },
+          "answer": "c",
+          "solution": "Since $C + PV(K)$ is underpriced ($8.4356 < 8.75$), you buy that combination (Buy Call, Buy Bond/Lend PV(K)). Since $P + S$ is overpriced, you sell that combination (Sell Put, Sell Stock). This makes the overall strategy: Buy Call, Sell Put, Sell Stock, Lend PV(K)."
+        },
+        {
+          "question": "According to the Q-theory of investment, a firm has an incentive to invest internally (build new capital) when:",
+          "options": {
+            "a": "Its Tobin's Q is less than 1.",
+            "b": "Its Tobin's Q is equal to 1.",
+            "c": "Its Tobin's Q is greater than 1.",
+            "d": "The unit price of bundled capital (q) is lower than 1."
+          },
+          "answer": "c",
+          "solution": "When Tobin's Q is greater than 1, the market values the firm's existing capital at more than it costs to replace, signaling that new investment will add value."
+        },
+        {
+          "question": "Which of the following best distinguishes real options from financial options?",
+          "options": {
+            "a": "Real options are traded on organized exchanges, while financial options are over-the-counter.",
+            "b": "Real options involve flexibility in business projects or tangible assets, while financial options are on financial securities.",
+            "c": "Real options always have a fixed expiration date, unlike financial options.",
+            "d": "Real options are always less valuable than financial options due to illiquidity."
+          },
+          "answer": "b",
+          "solution": "Real options grant management flexibility over real investments (e.g., expand, defer), while financial options are contracts on financial assets."
+        },
+        {
+          "question": "An entrepreneur's project can have a value of 10M EUR (prob 40%) or 2M EUR (prob 60%) in two years. If there's 6M EUR debt, and the owner has limited liability, what is the owner's expected payoff from this project?",
+          "options": {
+            "a": "2.4M EUR",
+            "b": "3.6M EUR",
+            "c": "1.6M EUR",
+            "d": "4.0M EUR"
+          },
+          "answer": "c",
+          "solution": "Owner's Payoff if 10M EUR firm value: Max(10M - 6M, 0) = 4M EUR.\nOwner's Payoff if 2M EUR firm value: Max(2M - 6M, 0) = 0M EUR (due to limited liability).\nExpected Payoff = (0.40 * 4M) + (0.60 * 0M) = 1.6M EUR."
+        },
+        {
+          "question": "One common explanation for IPO underpricing is:",
+          "options": {
+            "a": "To maximize the proceeds for the issuing company.",
+            "b": "To ensure the offering is fully subscribed and generates positive first-day returns for initial investors.",
+            "c": "To penalize early investors for taking on too much risk.",
+            "d": "To allow the investment bank to earn higher fees."
+          },
+          "answer": "b",
+          "solution": "Underpricing makes the IPO attractive to initial investors, creating a positive \"pop\" on the first day, which helps ensure successful placement and rewards those investors."
+        },
+        {
+          "question": "A company has 1 million shares outstanding trading at 15 EUR/share. It issues 200,000 new shares through an SEO at an issuing price of 14 EUR/share. The fees for the SEO are **0.2 million EUR**. If the SEO is value neutral, what is the share price after the SEO?",
+          "options": {
+            "a": "14.50 EUR",
+            "b": "14.67 EUR (approx)",
+            "c": "14.83 EUR (approx)",
+            "d": "15.00 EUR"
+          },
+          "answer": "b",
+          "solution": "Old Equity Value ($E_{old}$) = 1M sh * 15 EUR/sh = 15M EUR.\nGross Proceeds = 0.2M sh * 14 EUR/sh = 2.8M EUR.\nNet Proceeds = 2.8M - 0.2M (fees) = 2.6M EUR.\nNew Equity Value ($E_{new}$) = $E_{old}$ + Net Proceeds = 15M + 2.6M = 17.6M EUR.\nTotal Shares ($N_{total}$) = 1M + 0.2M = 1.2M shares.\nNew Share Price ($P_{new}$) = $E_{new}$ / $N_{total}$ = 17.6M / 1.2M \\approx 14.67 EUR."
+        },
+        {
+          "question": "A project costs 100k EUR today. Its value is 120k EUR today. In one year, its value will be 150k EUR (if market expands) or 100k EUR (if market contracts). The option to wait costs 115k EUR if exercised at t=1. Risk-neutral investors, risk-free rate = 0%. What is the value at t=0 of the option to wait?",
+          "options": {
+            "a": "14k EUR",
+            "b": "18k EUR",
+            "c": "21k EUR",
+            "d": "22k EUR"
+          },
+          "answer": "a",
+          "solution": "Option Payoff at t=1: Max(150k - 115k, 0) = 35k (expand); Max(100k - 115k, 0) = 0k (contract).\nRisk-neutral probability ($p$) for expand: $120 = (p \\times 150) + ((1-p) \\times 100)$, solving for $p$ gives $p=0.4$.\nExpected Option Payoff = (0.4 * 35k) + (0.6 * 0k) = 14k EUR.\nValue of Option (PV at t=0) = 14k / (1+0) = 14k EUR."
+        },
+        {
+          "question": "An entrepreneur's project can earn 10M EUR (success, prob 3/4) or 2M EUR (failure, prob 1/4). Entrepreneur earns 0.5M EUR private benefit if successful, 0 if failure. If external risk-neutral investors can invest at a 10% rate for analogous projects, what is the maximum amount they are willing to invest?",
+          "options": {
+            "a": "5.28 mln EUR",
+            "b": "5.78 mln EUR",
+            "c": "6.93 mln EUR",
+            "d": "7.18 mln EUR"
+          },
+          "answer": "c",
+          "solution": "Total expected project payoff = (3/4 * 10M) + (1/4 * 2M) = 7.5M + 0.5M = 8M EUR.\nEntrepreneur's expected private payoff = (3/4 * 0.5M) + (1/4 * 0M) = 0.375M EUR.\nExpected payoff available to external investors = 8M - 0.375M = 7.625M EUR.\nMax willingness to invest = 7.625M / (1 + 0.10) = 7.625M / 1.10 \\approx 6.93M EUR."
+        },
+        {
+          "question": "The current stock price of Company X is 50 EUR. The one-year risk-free interest rate is 2%. A one-year put on Company X with a strike price of 55 EUR trades at 6 EUR, while a one-year call with the same strike price trades at 2 EUR. (Approximate PV(K) to 53.92). How would you exploit this arbitrage opportunity?",
+          "options": {
+            "a": "Buy Call, Buy Put, Sell Stock, Borrow PV(K).",
+            "b": "Buy Call, Sell Put, Sell Stock, Lend PV(K).",
+            "c": "Sell Call, Buy Put, Buy Stock, Borrow PV(K).",
+            "d": "Sell Call, Sell Put, Buy Stock, Lend PV(K)."
+          },
+          "answer": "b",
+          "solution": "Check Parity: $C + PV(K) = 2 + 53.92 = 55.92$.\n$P + S = 6 + 50 = 56$.\nSince $55.92 < 56$, the left side ($C + PV(K)$) is underpriced.\nArbitrage strategy: Buy the underpriced combination (Long Call, Long Bond/Lend PV(K)). Sell the overpriced combination (Short Put, Short Stock). This translates to: Buy Call, Lend PV(K), Sell Put, Sell Stock."
+        },
+        {
+          "question": "In a risk-neutral world, the current price of any asset is equal to:",
+          "options": {
+            "a": "Its expected future payoff discounted at the asset's required rate of return.",
+            "b": "Its historical average payoff discounted at the risk-free rate.",
+            "c": "Its expected future payoff, calculated using risk-neutral probabilities, discounted at the risk-free rate.",
+            "d": "Its most likely future payoff, discounted at the risk-free rate."
+          },
+          "answer": "c",
+          "solution": "Risk-neutral valuation involves using risk-neutral probabilities to calculate expected future payoffs and then discounting those payoffs at the risk-free rate."
+        },
+        {
+          "question": "In the context of firm valuation using option theory, shareholders' equity can be viewed as:",
+          "options": {
+            "a": "A risk-free bond plus a put option.",
+            "b": "A call option on the firm's assets with a strike price equal to the debt's face value.",
+            "c": "A put option on the firm's assets with a strike price equal to the debt's face value.",
+            "d": "A combination of a long call and a short put."
+          },
+          "answer": "b",
+          "solution": "Equity holders have the right to the firm's assets after debtholders are paid, similar to a call option on the firm's assets."
+        },
+        {
+          "question": "The concept of limited liability for shareholders implies that:",
+          "options": {
+            "a": "Shareholders are responsible for all of the company's debts.",
+            "b": "Shareholders' maximum loss is limited to the amount they have invested in the company.",
+            "c": "Shareholders have unlimited personal liability for the company's actions.",
+            "d": "Creditors have no claim on the company's assets in case of bankruptcy."
+          },
+          "answer": "b",
+          "solution": "Limited liability protects shareholders' personal assets from company debts, capping their loss at their investment."
+        },
+        {
+          "question": "The total market value of a firm is generally considered to be equal to:",
+          "options": {
+            "a": "Its book value of assets.",
+            "b": "The total market value of its liabilities (debt + equity).",
+            "c": "Its accounting profits over its lifetime.",
+            "d": "Its total revenue."
+          },
+          "answer": "b",
+          "solution": "The market value of a firm's assets must equal the market value of the claims on those assets (debt + equity)."
+        },
+        {
+          "question": "In a Modigliani-Miller world, if a firm repurchases shares, the price per share *after* the repurchase is equivalent to the stock's price if a cash dividend of the same amount had been paid instead. This comparison highlights that the post-repurchase price equals the:",
+          "options": {
+            "a": "Cum-dividend price.",
+            "b": "Ex-dividend price.",
+            "c": "Stock's original IPO price.",
+            "d": "Post-split price."
+          },
+          "answer": "b",
+          "solution": "Both dividends and repurchases distribute cash, reducing the firm's assets. The price after either action reflects the value of the firm *without* that distributed cash, which is the definition of the ex-dividend price. (Note: This is the standard academic view for general cases. Refer to Q3 for the specific interpretation from your slides.)"
+        },
+        {
+          "question": "Debt overhang primarily manifests as an incentive for shareholders to:",
+          "options": {
+            "a": "Invest in highly profitable, low-risk projects.",
+            "b": "Undertake risky projects, even if they have negative NPV for the firm, due to limited liability.",
+            "c": "Forgo positive NPV projects if a significant portion of their benefits accrues to existing debtholders.",
+            "d": "Issue more debt to finance new investments."
+          },
+          "answer": "c",
+          "solution": "Debt overhang causes shareholders to underinvest because the benefits of new projects are captured by debtholders, leaving insufficient incentives for shareholders to bear the cost."
+        },
+        {
+          "question": "When a financially healthy company unexpectedly cuts its dividend, how might investors interpret this signal, assuming information asymmetry?",
+          "options": {
+            "a": "As a positive signal about future earnings, causing the stock price to rise.",
+            "b": "As a negative signal about future earnings, causing the stock price to fall.",
+            "c": "As a neutral event, having no impact on the stock price.",
+            "d": "As an indication that the company will repurchase shares instead."
+          },
+          "answer": "b",
+          "solution": "A dividend cut from a healthy company, when information is asymmetric, is typically interpreted as management signaling bad news about future cash flows, leading to a stock price drop."
+        },
+        {
+          "question": "The value of a real option (like the option to defer investment) is typically enhanced by an increase in:",
+          "options": {
+            "a": "The cost of the project.",
+            "b": "The risk-free interest rate (if the project value is highly volatile).",
+            "c": "The level of uncertainty (volatility) of the project's future cash flows.",
+            "d": "The required payback period."
+          },
+          "answer": "c",
+          "solution": "Options derive value from uncertainty. Higher volatility provides more upside potential without increasing downside risk (due to the right to not exercise), thus increasing option value."
+        },
+        {
+          "question": "In a situation of financial distress, why might the NPV of a project be positive for the firm but negative for the shareholders?",
+          "options": {
+            "a": "Because debtholders are fully repaid first, leaving nothing for shareholders.",
+            "b": "Because the project increases the firm's total value, but the benefits primarily go to debtholders, diluting shareholder returns.",
+            "c": "Because the firm has insufficient cash to cover the project cost.",
+            "d": "Because shareholders are risk-averse, and the project is too risky."
+          },
+          "answer": "b",
+          "solution": "This describes the core of the debt overhang problem, where the project's value is siphoned off by debtholders' prior claims."
+        },
+        {
+          "question": "Who typically benefits most from IPO underpricing in the short term?",
+          "options": {
+            "a": "The issuing company, as it raises more capital.",
+            "b": "The investment bank, as it earns higher fees.",
+            "c": "The initial investors who are allocated shares at the issue price.",
+            "d": "Existing shareholders of the issuing company."
+          },
+          "answer": "c",
+          "solution": "Initial investors (often institutional clients of the underwriters) benefit from the immediate \"pop\" between the issue price and the first-day trading price."
+        },
+        {
+          "question": "When an acquirer launches a tender offer to gain control of a target company, how do the direct administrative costs of the tender offer typically impact the maximum price the acquirer can offer without making a loss?",
+          "options": {
+            "a": "They increase the maximum offer price.",
+            "b": "They decrease the maximum offer price.",
+            "c": "They have no impact on the maximum offer price.",
+            "d": "They only impact the post-acquisition value, not the offer price."
+          },
+          "answer": "b",
+          "solution": "Direct costs are an additional expense for the acquirer, reducing the profit margin, and thus forcing them to offer a lower price to break even."
+        },
+        {
+          "question": "If in a Modigliani-Miller world (no taxes) you observe a market situation where a levered firm's value ($V_L$) is unexpectedly higher than an otherwise identical unlevered firm's value ($V_U$), what is true about the values?",
+          "options": {
+            "a": "$V_L > V_U$ indicates the market is in equilibrium.",
+            "b": "$V_L > V_U$ will lead to arbitrageurs buying $V_U$ and selling $V_L$ (synthetically).",
+            "c": "$V_L > V_U$ means debtholders are capturing less value than expected.",
+            "d": "$V_L > V_U$ implies the WACC of the levered firm is lower than the unlevered firm."
+          },
+          "answer": "b",
+          "solution": "If $V_L$ is overpriced relative to $V_U$, arbitrageurs will sell L (synthetically) and buy U to profit from the mispricing."
+        },
+        {
+          "question": "In the context of pricing financial options using a binomial model, when calculating the expected payoff of the option at a future node, why is the risk-free rate used to discount this expected payoff back to today?",
+          "options": {
+            "a": "Because the option itself is a risk-free asset.",
+            "b": "Because the risk premium has been incorporated into the probabilities of the future outcomes.",
+            "c": "Because all investors in the market are assumed to be risk-neutral.",
+            "d": "Because the options are perfectly hedged, making the entire portfolio risk-free."
+          },
+          "answer": "b",
+          "solution": "In risk-neutral valuation (common for option pricing), the risk adjustment is done by transforming the actual probabilities into risk-neutral probabilities, allowing the use of the risk-free rate for discounting."
+        },
+        {
+          "question": "A firm's market value of equity is €80 million, and its market value of debt is €20 million. It holds no cash or other non-operating assets. What is the total market value of the firm's operating assets?",
+          "options": {
+            "a": "€60 million",
+            "b": "€80 million",
+            "c": "€100 million",
+            "d": "€120 million"
+          },
+          "answer": "c",
+          "solution": "Total Market Value of Firm's Assets = Market Value of Debt + Market Value of Equity = 20M + 80M = 100M."
+        }
+      ]
+    }
+  ]
+}
