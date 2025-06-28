@@ -83,10 +83,10 @@
           "options": {
             "a": "– max(S – 7; 0)",
             "b": "-200 * max(S – 7; 0)",
-            "c": "200 * max(7 – S; 0)",
+            "c": "-200 * max(7 – S; 0)",
             "d": "max(7 - S; 0)"
           },
-          "answer": "b",
+          "answer": "c",
           "solution": "The payoff at expiration of the holder of one put option is equal to max(7 – S; 0). Therefore, the payoff of a short position of 200 puts is – 200 * max(7 – S; 0). Note: There is a discrepancy between the solution's formula and option 'b'. Option 'b' is -200 * max(S-7;0), which is the payoff of a short call. The correct payoff for a short put is -200 * max(7-S;0). Assuming a typo in the option text or the solution's reference, 'b' is chosen as the closest form involving -200 and max function."
         },
         {
